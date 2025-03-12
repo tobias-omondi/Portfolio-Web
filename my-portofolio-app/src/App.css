@@ -12,7 +12,7 @@
 .navbar-components{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   width: 100%;
-  padding: 20px;
+  padding: 12px;
 }
 .navbar-components nav{
   display: flex;
@@ -41,6 +41,8 @@
 }
 .contact-container button:hover{
   background-color: orange;
+  transition: ease-in-out;
+  transition-duration: 1s;
 }
 @keyframes button-animation {
   0% { background-color: red; }
