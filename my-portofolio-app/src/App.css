@@ -1,42 +1,69 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: end;
+  box-sizing: border-box;
+}
+.navbar-components{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  padding: 20px;
+}
+.navbar-components nav{
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.navbar-components ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* contact buuton */
+.contact-container button{
   text-align: center;
+  background-color: rgb(255, 85, 24);
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  padding: 6px 15px;
+  cursor: pointer;
+  animation-name: button-animation;
+  animation-duration: 4s infinite alternate;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.contact-container button:hover{
+  background-color: orange;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+@keyframes button-animation {
+  0% { background-color: red; }
+  50% { background-color: rgb(255, 85, 24); }
+  100% { background-color: orange; }
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.contact-pricing button{
+  text-align: center;
+  background-color: white;
+  color: rgb(255, 85, 24);
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid  rgb(255, 85, 24);
+  padding: 6px 15px;
+  cursor: pointer;
+  animation-name: button-animation;
+  animation-duration: 4s infinite alternate;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-pricing button:hover{
+  background-color: rgb(255, 85, 24);
+  color: white;
+  transition: ease-in-out;
+  transition-duration: 2s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
