@@ -1,4 +1,5 @@
 import './App.css'
+import MainComponets from './Componets/MainPage/MainComponets';
 import Navbar from './Componets/Navbar'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   return (
     <div>
       <Navbar/>
-
+      <MainComponets/>
       <section id="questions" style={{ height: '100vh', padding: '50px', backgroundColor: '#f4f4f4' }}>
         <h2>Questions Section</h2>
       </section>

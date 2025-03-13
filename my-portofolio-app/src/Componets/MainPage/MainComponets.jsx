@@ -1,9 +1,14 @@
 import React from 'react'
+import Introduction from '../IntroductionPage/Introduction'
+import profilepicture from '/src/assets/potofolio profile.jpeg'
 
 const MainComponets = () => {
   return (
     <div>
-      <h2>All the props and imports of all page</h2>
+      <Introduction image={profilepicture} alt = 'portofolio profile picture '
+      title="Tobias .O. Omondi" titletwo="Software Developer"
+      descrption="GROW YOUR WORK WITH BEAUTIFUL CRAFTED"
+      />
     </div>
   )
 }
