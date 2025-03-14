@@ -8,19 +8,21 @@ const Navbar = () => {
     <div className='navbar-components'>
       <div>
         <nav>
-        <ul>
-            <li><Link to = "questions" smooth = {true} duration={500}>Questions</Link></li>
+        <ul className='services-container'>
+          <button>
+          <li><Link to = "services" smooth = {true} duration={500}>Services</Link></li>
+          </button>
         </ul>
-        <ul className='contact-container'>
+        <ul className='contact-pricing'>
             <button>
             <li><Link to = "contact" smooth = {true} duration={500}>Contact</Link></li>
             </button>
         </ul>
-        <ul className='contact-pricing'>
+        {/* <ul className='contact-pricing'>
             <button>
             <li><Link to='pricing' smooth = {true} duration={500}>Pricing</Link></li>
             </button>
-        </ul>
+        </ul> */}
         </nav>
       </div>
     </div>

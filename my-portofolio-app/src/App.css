@@ -25,7 +25,7 @@
 }
 
 /* contact buuton */
-.contact-container button{
+.services-container button{
   text-align: center;
   background-color: rgb(255, 85, 24);
   color: white;
@@ -38,7 +38,7 @@
   animation-name: button-animation;
   animation-duration: 4s infinite alternate;
 }
-.contact-container button:hover{
+.services-container button:hover{
   background-color: orange;
   transition: ease-in-out;
   transition-duration: 1s;
