@@ -5,9 +5,9 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import './Slider.css';
 
-// Modified React component
+
 const SliderTech = () => {
-    const techWords = ['Front-End', 'Back-End', 'System Design', 'SEO', 'SaaS'];
+    const techWords = ['Front-End', 'Back-End', 'System Design', 'AI/ML','SEO', 'SaaS'];
   
     return (
       <div className="slider-wrapper">
