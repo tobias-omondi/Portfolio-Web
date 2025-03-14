@@ -2,7 +2,7 @@ import React from 'react'
 import './Introduction.css'
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Introduction = ({image, title, titletwo, descrption}) => {
   return (
@@ -15,7 +15,7 @@ const Introduction = ({image, title, titletwo, descrption}) => {
         <div className='socialmedia-icons'>
           <a href='https://www.linkedin.com/in/tobias-omondi-8b1945273/' ><FaLinkedin size={25}/></a>
           <a href='https://x.com/TobiasOG_' ><FaXTwitter size={25}/></a>
-          <a href='#' ><FaInstagramSquare size={25}/></a>
+          <a href='https://github.com/tobias-omondi' ><FaGithub size={25}/></a>
         </div>
       </div>
     </div>
