@@ -19,7 +19,7 @@ const Topic = ({title}) => {
       <h3>{title}</h3>
       </div>
       <div className='topic-button'>
-        <div className='topic-button-book'><button type='submit'>Book a Call</button></div>
+        <div className='topic-button-book'><button type='submit' onClick={() => window.location.href = 'tel:+254 741041580'}>Chat with me</button></div>
         <div className='topic-button-share'><button type='submit' onClick={handleOpenForm}>Share Your Vision</button></div>
       </div>
 
