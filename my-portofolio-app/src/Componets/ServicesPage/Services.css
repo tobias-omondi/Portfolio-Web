@@ -86,7 +86,7 @@
 /* services file jsx */
 .services-container-projects {
     background-color: rgb(17, 15, 15);
-    border-radius: 60px;
+    border-radius: 60px 60px 0px 0px;
    /* height: 200vh; */
     padding: 50px;  
 }
