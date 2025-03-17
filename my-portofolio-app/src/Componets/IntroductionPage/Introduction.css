@@ -10,6 +10,7 @@
     border-radius: 10px;
     transform: rotate(350deg);
     object-fit: cover;
+    border: 2px solid black;
 }
 .title-introdution{
     display: grid;
