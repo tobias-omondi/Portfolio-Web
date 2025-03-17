@@ -1,6 +1,8 @@
 import './App.css'
+import Contact from './Componets/ContactPage/Contact';
 import MainComponets from './Componets/MainPage/MainComponets';
 import Navbar from './Componets/Navbar'
+import Services from './Componets/ServicesPage/Services';
 
 function App() {
 
@@ -8,13 +10,8 @@ function App() {
     <div>
       <Navbar/>
       <MainComponets/>
-      <section id="services" style={{ height: '100vh', padding: '50px', backgroundColor: '#f4f4f4' }}>
-        <h2>Services Section</h2>
-      </section>
-      
-      <section id="contact" style={{ height: '100vh', padding: '50px', backgroundColor: '#ddd' }}>
-        <h2>Contact Section</h2>
-      </section>
+      <Services/>
+      <Contact/>
     </div>
 
   )
