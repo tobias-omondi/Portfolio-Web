@@ -10,7 +10,7 @@ const Example = () => {
       <div className='example-images-container'>
         <img src={exampleoneimage} alt='techimage'/>
         <div>
-            <h1>Front-End Dev</h1>
+            <h1>Front-End-Dev</h1>
             <h4>Optimizing UI/UX with Modern Front-End Technologies</h4>
         </div>
       </div>
