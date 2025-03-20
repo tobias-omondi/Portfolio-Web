@@ -23,7 +23,7 @@
     display: block;
     width: 100%;
 }
-.project-links{
+.project-links-button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,9 +56,73 @@
     50% { background-color: rgb(255, 85, 24); }
     100% { background-color: orange; }
   }
-
-
-
+  .project-content {
+    margin-top: 30px;
+  }
+  
+  .project-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 33px;
+    padding: 20px;
+  }
+  .project-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .project-item-image {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .project-item h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+  }
+.projects-title-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+.projects-title-links p{
+  font-size: 1.2rem;
+  font-weight: 500;
+    font-style: normal;
+    text-align: center;
+} 
+.projects-title-links a{
+  color: orange;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.projects-title-links a:hover{
+  color: rgb(59, 57, 57);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.projects-title-links a:active{
+  color: yellow;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
 @media (max-width:1024px){
     .project-container h2{
         font-size: 2.3rem;
