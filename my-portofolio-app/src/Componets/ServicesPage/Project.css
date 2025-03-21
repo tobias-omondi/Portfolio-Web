@@ -112,12 +112,13 @@
   font-weight: bolder;
   font-style: normal;
   text-align: center;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .projects-title-links a:hover{
-  color: rgb(59, 57, 57);
+  color: rgb(255, 51, 0);
   text-decoration: none;
   font-size: 1.4rem;
+  rotate: 50deg;
 }
 .projects-title-links a:active{
   color: yellow;

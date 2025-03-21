@@ -3,6 +3,7 @@ import './Services.css'
 import Vision from './Vision'
 import roboteye from '/src/assets/roboteye.jpg'
 import Projects from './Projects'
+import Question from '../QuestionPage/Question'
 
 const Services = () => {
   return (
@@ -14,6 +15,7 @@ const Services = () => {
     </section>
     </div>
     <Projects/>
+    <Question/>
     </div>
   )
 }
