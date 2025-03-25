@@ -49,7 +49,7 @@ const Question = () => {
           <div key={question.id} className="question-item">
             {question.title} 
              <div className='question-arror-icons'>
-            <IoIosArrowRoundDown size={25}/>
+            <IoIosArrowRoundDown size={30}/>
             </div>
           </div>
         ))}
