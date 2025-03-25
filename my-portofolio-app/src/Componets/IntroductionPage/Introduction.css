@@ -5,12 +5,12 @@
     margin: 50px 0px;
 }
 .introdtion-container img{
-    width: 65px;
+    width: 70px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 10px;
-    transform: rotate(350deg);
+    transform: rotate(330deg);
     object-fit: cover;
-    border: 2px solid black;
+    border: 2px solid orangered;
 }
 .title-introdution{
     display: grid;
@@ -99,6 +99,9 @@
         .title-introdution h2{
             color: rgb(114, 109, 109);
             font-size: 1.2rem;
+        }
+        .introdtion-container img{
+            width: 60px;
         }
       }
 }
