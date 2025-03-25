@@ -3,4 +3,44 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 40px;
+   
 }
+.question-container-heading h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(83, 83, 83);
+}
+.questions-list{
+    padding: 10px;
+    margin: 10px 30px;
+}
+.question-item{
+    margin: 20px;
+    border: 1px solid rgb(255, 230, 0);
+    background: rgb(255,255,255);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    justify-content: space-between
+}
+.question-arror-icons{
+    color: orangered;
+    cursor: pointer;
+    transition: 0.5ms ease-in-out;
+    opacity: 1;
+}
+.question-arror-icons:hover{
+    color: orangered;
+    opacity: 0.4;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
