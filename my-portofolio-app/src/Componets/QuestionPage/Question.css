@@ -1,12 +1,12 @@
-.question-container{
+.question-container {
     background-color: white;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 40px;
-   
 }
-.question-container-heading h1{
+
+.question-container-heading h1 {
     text-align: center;
     font-size: 2rem;
     font-family: "Lato", sans-serif;
@@ -14,14 +14,16 @@
     font-style: normal;
     color: rgb(83, 83, 83);
 }
-.questions-list{
+
+.questions-list {
     padding: 10px;
     margin: 5px 5px;
 }
-.question-item{
+
+.question-item {
     margin: 20px;
     border: 1px solid orangered;
-    background: rgb(255,255,255);
+    background: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
@@ -30,62 +32,79 @@
     font-style: normal;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     display: flex;
-    justify-content: space-between
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
 }
-.question-arror-icons{
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+.question-arrow-icons {
     color: orange;
     cursor: pointer;
     transition: 0.5ms ease-in-out;
     opacity: 1;
 }
-.question-arror-icons:hover{
+
+.question-arrow-icons:hover {
     color: orange;
     opacity: 0.4;
 }
 
-@media (max-width: 480px){
-    .question-container-heading h1{
+.question-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .question-container-heading h1 {
         font-size: 1.3rem !important;
         font-weight: 400;
-
     }
-    .questions-list{
+    .questions-list {
         padding: 5px;
         margin: 5px 0px;
     }
-    .question-item{
+    .question-item {
         margin: 15px;
         padding: 15px;
         font-size: 15px;
     }
 }
+
 @media (max-width: 768px) {
-    .question-container-heading h1{
+    .question-container-heading h1 {
         font-size: 1.3rem !important;
         font-weight: 400;
-
     }
-    .questions-list{
+    .questions-list {
         padding: 5px;
         margin: 5px 0px;
     }
-    .question-item{
+    .question-item {
         margin: 15px;
         padding: 15px;
         font-size: 15px;
     }
 }
-@media (max-width:1024px) {
-    .question-container-heading h1{
+
+@media (max-width: 1024px) {
+    .question-container-heading h1 {
         font-size: 1.7rem;
         font-weight: 400;
-
     }
-    .questions-list{
+    .questions-list {
         padding: 5px;
         margin: 10px 0px;
     }
-    .question-item{
+    .question-item {
         margin: 15px;
         padding: 15px;
         font-size: 17px;
