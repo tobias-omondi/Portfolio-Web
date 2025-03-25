@@ -1,9 +1,10 @@
 .contact-container{
     background: rgb(0,0,0);
     background: linear-gradient(196deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9910313901345291) 50%, rgba(245,110,13,1) 100%);
-    padding: 30px;
+    padding: 10px;
     margin-top: 20px;
     border-radius: 80px 0px 80px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 .contact-heading{
     margin-top: 20px;
