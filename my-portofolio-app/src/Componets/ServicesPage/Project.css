@@ -1,6 +1,5 @@
 .project-container{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 48%, rgba(238,108,8,1) 100%, rgba(212,184,17,0.8687850140056023) 100%);
     padding: 10px 0px 30px 0px;
     border-radius: 0px 0px 60px 60px;
 }
@@ -82,7 +81,7 @@
     max-height: 50vh;
     border-radius: 10px;
     object-fit: cover;
-    filter: blur(3px);
+    filter: blur(1px);
   }
   
   .project-item h4 {

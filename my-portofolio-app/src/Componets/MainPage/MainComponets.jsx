@@ -3,7 +3,6 @@ import Introduction from '../IntroductionPage/Introduction'
 import profilepicture from '/src/assets/potofolio profile.jpeg'
 import SliderTech from '../IntroductionPage/SliderTech'
 import Topic from '../IntroductionPage/Topic'
-import Question from '../QuestionPage/Question'
 
 const MainComponets = () => {
   return (
