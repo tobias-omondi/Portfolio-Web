@@ -35,7 +35,7 @@ const ProjectData = {
   web: {
     title: "Web Development Articles",
     items: [
-      { id: 1, title: "Fanaka website", category: "web", image: webimage, link: "https://fanaka-kids-talent-academy-react.vercel.app/" },
+      { id: 1, title: "Fanaka website", category: "web", image: webimage  }, //link: "https://fanaka-kids-talent-academy-react.vercel.app/"
       { id: 2, title: "School website", category: "web", image: technicalimage},
     ],
   },
