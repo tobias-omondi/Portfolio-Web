@@ -13,7 +13,7 @@ const Introduction = ({image, title, titletwo, descrption}) => {
         <h2>{title}</h2>
         <h1>{titletwo}</h1>
         <div className='socialmedia-icons'>
-          <a href='https://www.linkedin.com/in/tobias-omondi-8b1945273/' ><FaLinkedin size={25}/></a>
+          <a href='https://www.linkedin.com/in/tobias-ogola-8b1945273/' ><FaLinkedin size={25}/></a>
           <a href='https://x.com/TobiasOG_' ><FaXTwitter size={25}/></a>
           <a href='https://github.com/tobias-omondi' ><FaGithub size={25}/></a>
         </div>

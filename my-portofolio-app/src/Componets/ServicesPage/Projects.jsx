@@ -26,14 +26,14 @@ const ProjectData = {
     ],
   },
   technical: {
-    title: "Technical Writing Articles",
+    title: "Graphic Designs",
     items: [
-      { id: 1, title: "Technical Article ", category: "technical", image: technicalimage },
-      { id: 2, title: "Technical Article ", category: "technical", image: technicalimageone  },
+      { id: 1, title: "Graphic design Project ", category: "technical", image: technicalimage },
+      { id: 2, title: "Graphic design Project ", category: "technical", image: technicalimageone  },
     ],
   },
   web: {
-    title: "Web Development Articles",
+    title: "Web Development Articles & Design",
     items: [
       { id: 1, title: "Fanaka website", category: "web", image: webimage  }, //link: "https://fanaka-kids-talent-academy-react.vercel.app/"
       { id: 2, title: "School website", category: "web", image: technicalimage},
@@ -61,7 +61,7 @@ const Projects = () => {
         <button className={activeCategory === "all" ? "active" : ""} onClick={() => handleClick("all")} > All </button>
         <button className={activeCategory === "web" ? "active" : ""} onClick={() => handleClick("web")}> Web </button>
         <button className={activeCategory === "brand" ? "active" : ""} onClick={() => handleClick("brand")} > Brand </button>
-        <button className={activeCategory === "technical" ? "active" : ""} onClick={() => handleClick("technical")}> Technical Writing</button>
+        <button className={activeCategory === "technical" ? "active" : ""} onClick={() => handleClick("technical")}> Graphic Design</button>
       </div>
 
 

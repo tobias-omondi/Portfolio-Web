@@ -8,11 +8,11 @@ const MainComponets = () => {
   return (
     <div>
       <Introduction image={profilepicture} alt = 'portofolio profile picture '
-      title="Tobias .O. Omondi" titletwo="Software Developer"
+      title="Tobias .O. Ogola" titletwo="Software Developer & Graphic Designer"
       descrption="GROW YOUR WORK WITH BEAUTIFUL CRAFTED"
       />
       <SliderTech/>
-      <Topic title="As a Software Developer, I specialize in crafting software solutions for Startups and SaaS products, while collaborating with teams to bring ideas to life."/>
+      <Topic title="I’m a Software Developer who loves helping Startups and SaaS ideas come to life. I also enjoy graphic design to make things look great."/>
     </div>
   )
 }
