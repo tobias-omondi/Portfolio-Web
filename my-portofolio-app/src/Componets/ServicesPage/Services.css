@@ -17,7 +17,7 @@
     height: 25vh;
     object-fit: cover;
     border-radius: 50px;
-    border: 3px solid orangered;
+    border: 2px solid orangered;
     transition: 0.3s ease-in-out;
     cursor: pointer;  
     margin-top: 30px;
@@ -36,14 +36,14 @@
 
 .vision-heading h2 {
     font-size: 2.2rem;
-    color: #797575; 
+    color: rgb(228, 225, 225);  
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-style: normal;
     text-align: center;
 }
 .vision-heading h3{
-    color: #797575; 
+    color: rgb(228, 225, 225); 
     font-size: 1.2rem;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -57,14 +57,16 @@
     display: flex;
     align-items: center; 
     justify-content: center; 
+    justify-content: space-evenly;
     text-align: center; 
-    padding:20px;
-    gap: 70px;
+    padding: 20px;
+    gap: 100px;
 }
 .example-images-container img{
     width: 100%;
-    height: auto;
-    border: 2px solid yellow;
+    max-height: auto;
+    height: 60vh;
+    border: 2px solid orangered;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
@@ -74,20 +76,30 @@
 .example-images-container{
     display: flex;
     flex-direction: column;
-    color: #797575; 
+    color: rgb(228, 225, 225); 
     max-width: 300px;
     gap: 20px;
 }
 .example-images-container h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-}
-.example-images-container h1 h4{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    max-width: 260px;
+
+}
+.example-images-container h4{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid orange;
 }
 
 /* Media queries */
@@ -108,13 +120,12 @@
         gap: 25px;
     }
     .example-images-container img{
-        width: 100%;
-        max-height: 50vh;
-        height: auto;
+        width: 245px;
+        height: 25vh !important;
     }
     .example-container{
-        padding: 20px;
-        gap: 30px;
+        padding: 5px;
+        gap: 20px;
     }
 }
 
@@ -166,7 +177,7 @@
     .example-images-container img{
         width: auto;
         max-height: auto;
-        height: 30vh !important;
+        height: 50vh !important;
     }
     .vision-service-container-image img {
         width: auto;
