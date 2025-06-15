@@ -20,15 +20,17 @@
 }
 .title-introdution h2{
     color: rgb(114, 109, 109);
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
     font-style: normal;
+    text-align: center;
 }
 .title-introdution h1{
     color: rgb(32, 32, 32);
     font-family: "Lato", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
+    text-align: center;
 }
 .socialmedia-icons{
     display: flex;

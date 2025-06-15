@@ -8,7 +8,7 @@ const MainComponets = () => {
   return (
     <div>
       <Introduction image={profilepicture} alt = 'portofolio profile picture '
-      title="Tobias .O. Ogola" titletwo="Software Developer & Graphic Designer"
+      title="Tobias .O. Ogola"  titletwo="Software Developer &" titlethree = "Graphic Designer"
       descrption="GROW YOUR WORK WITH BEAUTIFUL CRAFTED"
       />
       <SliderTech/>
