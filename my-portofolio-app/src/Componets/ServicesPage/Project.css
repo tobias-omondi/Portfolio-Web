@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .project-container{
     background: #1A1A1A;
     padding: 10px 0px 30px 0px;
@@ -8,17 +11,19 @@
     text-align: center;
 }
 .project-container h2{
-    color: rgb(151, 146, 146);
+    color: rgb(224, 224, 224);
     text-align: center;
     font-size: 2.5rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
     font-style: normal;
     text-align: center;
     margin-top: 3rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    
 }
 .project-container span{
-    color: yellow;
+    color: orange;
     display: block;
     width: 100%;
 }
@@ -33,14 +38,16 @@
 .project-links-button button{
     font-size: 1rem;
     border-radius: 40px;
-    border: none;
     outline: none;
-    background-color: orange;
-    color: black;
+    background-color: transparent;
+    border: 1px solid orange;
+    color: white;
     border-radius: 10px;
     outline: none;
-    border: none;
     padding: 6px 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     cursor: pointer;
     animation-name: button-animation;
     animation-duration: 4s infinite alternate;
@@ -49,7 +56,7 @@
     background-color: orange;
     transition: ease-in-out;
     transition-duration: 1s;
-    color: white;
+    color: black;
   }
   @keyframes button-animation {
     0% { background-color: red; }
@@ -90,10 +97,13 @@
     margin-top: 10px;
     font-size: 1.2rem;
     color: white;
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-style: normal;
     font-style: normal;
     text-align: center;
+    
   }
 .projects-title-links {
   display: flex;
@@ -102,9 +112,11 @@
 } 
 .projects-title-links p{
   font-size: 1.2rem;
-  font-weight: 500;
     font-style: normal;
     text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 } 
 .projects-title-links a{
   color: orange;

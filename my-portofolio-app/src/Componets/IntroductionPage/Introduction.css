@@ -20,15 +20,15 @@
 }
 .title-introdution h2{
     color: rgb(114, 109, 109);
-    font-family: "poppins", sans-serif;
-    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
 }
 .title-introdution h1{
     color: rgb(32, 32, 32);
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
     font-style: normal;
     text-align: center;
 }
@@ -57,9 +57,9 @@
     margin: auto;
     text-align: center;
     margin-top: -40px;
-    color: rgb(88, 86, 86);
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    color: rgb(59, 59, 59);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -108,4 +108,5 @@
       }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
