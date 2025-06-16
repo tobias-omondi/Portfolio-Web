@@ -1,6 +1,6 @@
 .contact-container{
     background: #1A1A1A;
-    background: linear-gradient(196deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9910313901345291) 50%, rgba(245,110,13,1) 100%);
+    background: linear-gradient(196deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9910313901345291) 50%, rgb(13, 114, 245) 100%);
     padding: 10px;
     margin-top: 20px;
     border-radius: 80px 80px 0px 0px;

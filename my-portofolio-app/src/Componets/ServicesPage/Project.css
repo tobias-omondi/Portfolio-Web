@@ -23,7 +23,7 @@
     
 }
 .project-container span{
-    color: orange;
+    color:  rgb(13, 114, 245);
     display: block;
     width: 100%;
 }
@@ -39,8 +39,8 @@
     font-size: 1rem;
     border-radius: 40px;
     outline: none;
-    background-color: orangered;
-    border: 1px solid orange;
+    background-color:  rgb(13, 114, 245);
+    border: 1px solid rgb(66, 65, 65);
     color: white;
     border-radius: 10px;
     outline: none;
@@ -53,16 +53,16 @@
     animation-duration: 4s infinite alternate;
 }
 .project-container button:hover{
-    background-color: orange;
+    background-color:  rgb(3, 69, 155);
     transition: ease-in-out;
     transition-duration: 1s;
     color: black;
   }
-  @keyframes button-animation {
+  /* @keyframes button-animation {
     0% { background-color: red; }
     50% { background-color: rgb(255, 85, 24); }
     100% { background-color: orange; }
-  }
+  } */
   .project-content {
     margin-top: 30px;
   }

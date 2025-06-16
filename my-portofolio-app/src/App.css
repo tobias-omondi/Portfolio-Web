@@ -27,7 +27,7 @@
 /* contact buuton */
 .services-container button{
   text-align: center;
-  background-color: rgb(255, 85, 24);
+  background-color:  rgb(13, 114, 245);
   color: white;
   border-radius: 10px;
   font-size: 1rem;
@@ -39,30 +39,30 @@
   animation-duration: 4s infinite alternate;
 }
 .services-container button:hover{
-  background-color: orange;
+  background-color:  rgb(0, 65, 150);
   transition: ease-in-out;
   transition-duration: 1s;
 }
-@keyframes button-animation {
+/* @keyframes button-animation {
   0% { background-color: red; }
   50% { background-color: rgb(255, 85, 24); }
   100% { background-color: orange; }
-}
+} */
 .contact-pricing button{
   text-align: center;
   background-color: white;
-  color: rgb(255, 85, 24);
+  color: black;
   border-radius: 10px;
   font-size: 1rem;
   outline: none;
-  border: 1px solid  rgb(255, 85, 24);
+  border: 1px solid   rgb(13, 114, 245);
   padding: 6px 15px;
   cursor: pointer;
   animation-name: button-animation;
   animation-duration: 4s infinite alternate;
 }
 .contact-pricing button:hover{
-  background-color: rgb(255, 85, 24);
+  background-color:  rgb(13, 114, 245);
   color: white;
   transition: ease-in-out;
   transition-duration: 2s;

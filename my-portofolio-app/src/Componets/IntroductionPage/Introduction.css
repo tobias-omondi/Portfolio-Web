@@ -10,7 +10,7 @@
     border-radius: 10px;
     transform: rotate(330deg);
     object-fit: cover;
-    border: 2px solid orangered;
+    border: 2px solid  rgb(58, 58, 59);
 }
 .title-introdution{
     display: grid;
@@ -40,13 +40,13 @@
     color: black;
 }
 .socialmedia-icons a {
-    color: black;
+    color: rgb(37, 36, 36);
     animation: glow 2s infinite;
     animation-duration: 2s;
     transition: ease-in-out 0.4s;
 }
 .socialmedia-icons a:hover{
-    color: orangered;
+    color:  rgb(13, 114, 245);
     animation: glow 1s infinite;
 }
 .description-title p{

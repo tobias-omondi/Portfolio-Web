@@ -19,7 +19,7 @@
 }
 .topic-button-book button{
     text-align: center;
-    background-color: rgb(255, 85, 24);
+    background-color: rgb(8, 87, 189);
     color: white;
     border-radius: 10px;
     font-size: 1rem;
@@ -33,30 +33,30 @@
     animation-duration: 4s infinite alternate;
 }
 .topic-button-book button:hover{
-    background-color: orange;
+    background-color:  rgb(13, 114, 245);
    transition: ease-in-out;
    transition-duration: 1s;
 }
 @keyframes button-animation-book {
-    0% { background-color: red; }
-    50% { background-color: rgb(255, 85, 24); }
-    100% { background-color: orange; }
-  }
+  0% { background-color: red; }                 /* Start with red */
+  50% { background-color: rgb(128, 0, 128); }    /* Purple (mix of red and blue) */
+  100% { background-color: rgb(13, 114, 245); }  /* Your blue tone */
+}
 .topic-button-share button{
     text-align: center;
     background-color: white;
-    color: rgb(255, 85, 24);
+    color: black;
     border-radius: 10px;
     font-size: 1rem;
     outline: none;
-    border: 1px solid  rgb(255, 85, 24);
+    border: 1px solid  rgb(44, 42, 42);
     padding: 6px 15px;
     cursor: pointer;
     animation-name: button-animation;
     animation-duration: 4s infinite alternate;
 }
 .topic-button-share button:hover{
-    background-color: orange;
+    background-color: rgb(13, 114, 245);
     transition: ease-in-out;
     transition-duration: 1s;
     color: white;
@@ -97,7 +97,7 @@
   }
   
   .close-button {
-    background-color: orangered;
+    background-color:  rgb(13, 114, 245);
     color: white;
     padding: 0.5rem 1rem;
     border: none;
