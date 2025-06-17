@@ -8,13 +8,15 @@ import technicalimageone from '/src/assets/Technology.jpg'
 import technicalimage from '/src/assets/webthree.jpeg';
 import { CgWebsite } from "react-icons/cg";
 import { AiFillGithub } from "react-icons/ai";
+import { FaLink } from "react-icons/fa";
+
 
 const ProjectData = {
   all: {
     title: "All Content",
     items: [
       { id: 1, title: "Brand Article", category: "brand", image: brandimage },
-      { id: 2, title: "Web developemt", category: "web", image: webimage , github: 'https://github.com/tobias-omondi/Fanaka_kids_talent_academy_react' },   // link: "https://fanaka-kids-talent-academy-react.vercel.app/"
+      { id: 2, title: "Web developemt", category: "web", image: webimage , github: 'https://github.com/tobias-omondi/Fanaka_kids_talent_academy_react' , link: "https://lush-bloom.vercel.app/" },   // link: "https://fanaka-kids-talent-academy-react.vercel.app/"
       { id: 3, title: "Technical Writing Article 1", category: "technical", image: technicalimage },
     ],
   },
@@ -35,7 +37,7 @@ const ProjectData = {
   web: {
     title: "Web Development Articles & Design",
     items: [
-      { id: 1, title: "Fanaka website", category: "web", image: webimage  }, //link: "https://fanaka-kids-talent-academy-react.vercel.app/"
+      { id: 1, title: "Lush-Bloom", category: "web", image: webimage , link: 'https://lush-bloom.vercel.app/' }, //link: "https://fanaka-kids-talent-academy-react.vercel.app/"
       { id: 2, title: "School website", category: "web", image: technicalimage},
     ],
   },
@@ -78,7 +80,7 @@ const Projects = () => {
               {/* Conditionally render Link or external <a> */}
                 {item.link ? (
                     item.link.startsWith("http") ? (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer"> <CgWebsite size={30}/> </a>
+                      <a href={item.link} target="_blank" rel="noopener noreferrer"> <FaLink size={30}/> </a>
                 ) : (
               <Link to={item.link}>Read More</Link>
                 )
