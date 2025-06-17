@@ -9,6 +9,7 @@ import technicalimage from '/src/assets/webthree.jpeg';
 import { CgWebsite } from "react-icons/cg";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLink } from "react-icons/fa";
+import { IoIosLink } from "react-icons/io";
 
 
 const ProjectData = {
@@ -80,7 +81,7 @@ const Projects = () => {
               {/* Conditionally render Link or external <a> */}
                 {item.link ? (
                     item.link.startsWith("http") ? (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer"> <FaLink size={30}/> </a>
+                      <a href={item.link} target="_blank" rel="noopener noreferrer"> <IoIosLink size={30}/> </a>
                 ) : (
               <Link to={item.link}>Read More</Link>
                 )
