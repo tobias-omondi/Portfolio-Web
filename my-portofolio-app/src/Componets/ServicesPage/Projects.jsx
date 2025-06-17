@@ -6,9 +6,9 @@ import brandimageone from '/src/assets/computer-vision.png'
 import webimage from '/src/assets/webone.jpeg';
 import technicalimageone from '/src/assets/Technology.jpg'
 import technicalimage from '/src/assets/webthree.jpeg';
-import { CgWebsite } from "react-icons/cg";
-import { AiFillGithub } from "react-icons/ai";
-import { FaLink } from "react-icons/fa";
+// import { CgWebsite } from "react-icons/cg";
+// import { AiFillGithub } from "react-icons/ai";
+// import { FaLink } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
 
 
