@@ -7,7 +7,7 @@ import './Slider.css';
 
 
 const SliderTech = () => {
-    const techWords = ['Front-End', 'Graphic Design', 'Web Design', 'System Design','SEO', 'SaaS'];
+    const techWords = ['Front-End', 'Backend','Graphic Design', 'Web Design', 'System Design','SEO', 'SaaS'];
   
     return (
       <div className="slider-wrapper">
