@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import brandimage from '/src/assets/Aiml.jpeg';
 import brandimageone from '/src/assets/computer-vision.png'
 import webimage from '/src/assets/webone.jpeg';
+import webimage2 from '/src/assets/lapa.png';
 import technicalimageone from '/src/assets/Technology.jpg'
-import technicalimage from '/src/assets/webthree.jpeg';
+import technicalimage from '/src/assets/webfour.png';
 // import { CgWebsite } from "react-icons/cg";
 // import { AiFillGithub } from "react-icons/ai";
 // import { FaLink } from "react-icons/fa";
@@ -17,7 +18,7 @@ const ProjectData = {
     title: "All Content",
     items: [
       { id: 1, title: "Brand Article", category: "brand", image: brandimage },
-      { id: 2, title: "Web developemt", category: "web", image: webimage , github: 'https://github.com/tobias-omondi/Fanaka_kids_talent_academy_react' , link: "https://lush-bloom.vercel.app/" },   // link: "https://fanaka-kids-talent-academy-react.vercel.app/"
+      { id: 2, title: "Web developemt", category: "web", image: webimage2 , github: 'https://github.com/tobias-omondi/Fanaka_kids_talent_academy_react' , link: "https://lapa-weld.vercel.app/'" },   // link: "https://fanaka-kids-talent-academy-react.vercel.app/"
       { id: 3, title: "Technical Writing Article 1", category: "technical", image: technicalimage },
     ],
   },
@@ -39,7 +40,8 @@ const ProjectData = {
     title: "Web Development Articles & Design",
     items: [
       { id: 1, title: "Lush-Bloom", category: "web", image: webimage , link: 'https://lush-bloom.vercel.app/' }, //link: "https://fanaka-kids-talent-academy-react.vercel.app/"
-      { id: 2, title: "School website", category: "web", image: technicalimage},
+      { id: 2, title: "Ecomerce", category: "web", image: technicalimage, link: 'https://e-commerce-txeal.vercel.app/'},
+      { id: 3, title: "Lapa", category: "web", image: webimage2, link: 'https://lapa-weld.vercel.app/'},
     ],
   },
 };
@@ -86,7 +88,7 @@ const Projects = () => {
               <Link to={item.link}>Read More</Link>
                 )
                 ) : (
-              <p>No Link Available</p>
+              <p>PRESS WEB BUTTON FOR NOW</p>
                )}
             </div>
             </div>
