@@ -18,7 +18,7 @@ const ProjectData = {
     title: "All Content",
     items: [
       { id: 1, title: "Brand Article", category: "brand", image: brandimage },
-      { id: 2, title: "Web developemt", category: "web", image: webimage2 , github: 'https://github.com/tobias-omondi/Fanaka_kids_talent_academy_react' , link: "https://lapa-weld.vercel.app/'" },   // link: "https://fanaka-kids-talent-academy-react.vercel.app/"
+      { id: 2, title: "Web developemt", category: "web", image: webimage2 , github: 'https://github.com/tobias-omondi/Fanaka_kids_talent_academy_react' , link: "https://lapa-weld.vercel.app/" },   // link: "https://fanaka-kids-talent-academy-react.vercel.app/"
       { id: 3, title: "Technical Writing Article 1", category: "technical", image: technicalimage },
     ],
   },
