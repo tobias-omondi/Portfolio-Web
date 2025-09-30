@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body{
+  font-family: 'Melodrama', serif;
+  background-color: rgb(54, 53, 53);
+}
+
+h1, h2, .brand-name {
+  font-family: 'Melodrama', serif;
+}
