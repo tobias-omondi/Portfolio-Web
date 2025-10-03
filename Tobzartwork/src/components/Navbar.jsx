@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className='flex flex-col items-center flex-1'>
             <ul>
               {navbarMenu.map((item) => (
-                <li key={item.name} className='text-white text-center font-medium text-4xl py-5 px-4 hover:bg-blue-700 rounded mt-14 lg:mt-10 brand-name'>
+                <li key={item.name} className='text-white text-center font-medium text-4xl lg:text-6xl lg:py-4 px-4 hover:bg-blue-700 rounded mt-16 lg:mt-10 brand-name'>
                   <a href={item.link} onClick={() => setMenuOpen(false)}>{item.name}</a>
                 </li>
               ))}
