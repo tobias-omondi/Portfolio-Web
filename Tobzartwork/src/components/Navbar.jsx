@@ -48,22 +48,22 @@ const Navbar = () => {
         <div className='fixed inset-0 custom-gradient p-5 rounded shadow flex flex-row justify-evenly items-start z-40 w-full h-full'>
           {/* Left: Logo */}
           <div className='flex flex-col items-start flex-1'>
-            <h1 className='text-7xl lg:text-9xl font-extrabold mb-10 text-white'>
-              T<span className='custom-gradient2 font-black'>/</span>O
+            <h1 className='text-7xl lg:text-9xl font-extrabold mb-10 text-white brand-name'>
+              T<span className='custom-gradient2 font-medium'>/</span>O
             </h1>
           </div>
           {/* Right: Menu and Social Links */}
           <div className='flex flex-col items-center flex-1'>
             <ul>
               {navbarMenu.map((item) => (
-                <li key={item.name} className='text-white text-center font-bold text-4xl py-5 px-4 hover:bg-blue-700 rounded mt-14 lg:mt-10'>
+                <li key={item.name} className='text-white text-center font-medium text-4xl py-5 px-4 hover:bg-blue-700 rounded mt-14 lg:mt-10 brand-name'>
                   <a href={item.link} onClick={() => setMenuOpen(false)}>{item.name}</a>
                 </li>
               ))}
             </ul>
-            <div className='absolute bottom-20 left-8 flex flex-3 flex-collg:flex-row text-xl gap-8 font-light mt-10 text-white'>
+            <div className='absolute bottom-6 left-4 sm:bottom-10 sm:left-10 flex flex-row flex-wrap text-lg sm:text-xl gap-4 sm:gap-8 font-extralight text-white'>
               {socialLinks.map(link => (
-                <a key={link.name} href={link.link}>{link.name}</a>
+                <a  key={link.name} href={link.link}>{link.name} </a>
               ))}
             </div>
           </div>

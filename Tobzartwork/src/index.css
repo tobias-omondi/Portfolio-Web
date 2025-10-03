@@ -5,8 +5,12 @@ body{
   background-color: rgb(66, 66, 66);
 }
 
-h1, h2, .brand-name {
+h1, h2, h3, h4, h5, h6 .brand-name {
   font-family: 'Melodrama', serif;
+}
+
+p, li, a, span, button, input, textarea .body-text-view{
+  font-family: 'Clash Grotesk', sans-serif;
 }
 
 .custom-gradient{
