@@ -98,10 +98,10 @@ const Navbar = () => {
   // close button animation
   useEffect(() => {
     if (showOverlay && closebuttonref.current) {
-      gsap.fromTo(
+      gsap.to(
         closebuttonref.current,
         {scale: 1.3, opacity: 0.7},
-        {scale: 1, opacity: 1, duration:0.7, delay:0.3, ease:"power2.inOut"}
+        {scale: 1, opacity: 1, duration:0.7, delay:0.3, ease:"power3.inOut"}
       )
     }
   }, [toggleMenu])
@@ -109,11 +109,11 @@ const Navbar = () => {
   return (
     <div className='w-full'>
       {/* Top-right button (always in same position) */}
-      <div className="fixed top-8 right-8 z-50">
+      <div className="fixed top-5 right-8 z-50">
         {!toggleMenu ? (
           <button
             ref = {buttonref}
-            className='open-menu-button text-white font-extrabold text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent'
+            className='open-menu-button text-black font-extrabold text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent'
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"
           >
@@ -122,11 +122,11 @@ const Navbar = () => {
         ) : (
           <button
             ref={closebuttonref}
-            className="text-white text-xl cursor-pointer font-extrabold border-none bg-transparent"
+            className="text-black text-xl cursor-pointer font-extrabold border-none bg-transparent"
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >
-            Close
+            Clo<span className='text-blue-600'>se</span>
           </button>
         )}
       </div>
@@ -141,7 +141,7 @@ const Navbar = () => {
           <div className='flex flex-col items-start flex-1'>
             <h1
              ref = {logoRef}
-             className='text-7xl lg:text-9xl font-extrabold mb-10 text-black brand-name'>
+             className='text-7xl lg:text-9xl font-extrabold mb-10 text-white brand-name'>
               T<span className='custom-gradient2 font-medium'>/</span>O
             </h1>
           </div>
