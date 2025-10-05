@@ -15,6 +15,9 @@ const Home = () => {
           <p className='text-6xl lg:text-9xl font-bold text-center'>WE CREATE FEELINGS</p>
       </div>
 
+
+
+
        {/* About section */}
       <div className='mt-10'>
         <About />
