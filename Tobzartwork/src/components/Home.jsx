@@ -2,6 +2,9 @@ import React from 'react'
 import Navbar from './Navbar'
 import myImage from '/src/assets/portfolio.avif'
 import Footer from './Footer'
+import Contact from './Contact'
+import Work from './Work'
+import About from './About'
 
 const Home = () => {
   return (
@@ -12,6 +15,20 @@ const Home = () => {
           <p className='text-6xl lg:text-9xl font-bold text-center'>WE CREATE FEELINGS</p>
       </div>
 
+       {/* About section */}
+      <div className='mt-10'>
+        <About />
+      </div>
+
+      {/* Work section */}
+      <div className='mt-10'>
+        <Work />
+      </div>
+
+      {/* Contact section */}
+      <div className='mt-10'>
+        <Contact />
+      </div>
       {/* footer section */}
       <div className='mt-20'>
         <Footer />

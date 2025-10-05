@@ -14,7 +14,7 @@ const socialLinks = [
   {name: 'LINKEDIN', link: 'https://www.linkedin.com/in/tobias-ogola-8b1945273/'},
   {name: 'X', link: '#'},
   {name: 'INSTAGRAM', link: '#'},
-  {name: 'DEV.TO', link: '#'},
+  {name: 'DEV.TO', link: 'https://dev.to/tobiasog'},
   {name: 'BEHANCE', link: '#'}
 ]
 
@@ -72,12 +72,12 @@ const Navbar = () => {
     const links = socialLinksRef.current.querySelectorAll('a');
     gsap.fromTo(
       links,
-      { y: -100, opacity: 0 },
+      { y: -200, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         duration: 3.05,
-        ease: "elastic.out(1,0.3)",
+        ease: "elastic.out(4,0.3)",
         stagger: 0.09,
       }
     );
@@ -113,7 +113,7 @@ const Navbar = () => {
         {!toggleMenu ? (
           <button
             ref = {buttonref}
-            className='open-menu-button text-black font-extrabold text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent'
+            className='open-menu-button text-blue-500 font-extrabold text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent'
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"
           >
@@ -122,7 +122,7 @@ const Navbar = () => {
         ) : (
           <button
             ref={closebuttonref}
-            className="text-black text-xl cursor-pointer font-extrabold border-none bg-transparent"
+            className="text-white text-xl cursor-pointer font-extrabold border-none bg-transparent"
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >
@@ -149,14 +149,14 @@ const Navbar = () => {
           <div className='flex flex-col items-center flex-2'>
             <ul>
               {navbarMenu.map((item) => (
-                <li key={item.name} className='text-black text-center font-medium text-4xl lg:text-6xl lg:py-4 px-4 rounded mt-16 lg:mt-10 brand-name'>
+                <li key={item.name} className='text-white text-center font-medium text-4xl lg:text-6xl lg:py-4 px-4 rounded mt-16 lg:mt-10 brand-name'>
                   <a href={item.link} onClick={() => setMenuOpen(false)}>{item.name}</a>
                 </li>
               ))}
             </ul>
             <div
              ref={socialLinksRef}
-             className='social-links absolute bottom-6 left-4 sm:bottom-10 sm:left-10 flex flex-row flex-wrap text-lg sm:text-xl gap-4 sm:gap-8 font-extralight text-black'>
+             className='social-links absolute bottom-6 left-4 sm:bottom-10 sm:left-10 flex flex-row flex-wrap text-lg sm:text-xl gap-4 sm:gap-8 font-light text-gray-200'>
               {socialLinks.map(link => (
                 
                 <a key={link.name} href={link.link}>{link.name} </a>
