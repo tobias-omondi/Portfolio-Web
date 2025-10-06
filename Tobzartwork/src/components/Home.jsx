@@ -13,13 +13,13 @@ const Home = () => {
       <Navbar />
       <div className='mt-10'>
           <h1 className='text-gray-700 text-4xl text-start px-3'>TOBZ <br/>STUDIO</h1>
-          <div className='flex flex-row-reverse justify-center items-center space-x-2'>
+          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-x-2'>
 
-            <div className='w-2/3'>
+            <div  className="w-full md:w-1/2  md:h-screen">
                 <BrainScene />
             </div>
 
-            <div className='flex flex-col space-y-5 px-5 text-end w-2/3'>
+            <div className='flex flex-col space-y-5 px-3 text-center w-full lg:text-end lg:w-2/3'>
             <h1 className='text-4xl px-5 text-gray-400 font-medium'>When Imagination Ends, We Begin</h1>
             <p className='text-xl text-gray-600'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>

@@ -6,9 +6,10 @@ const BrainScene = () => {
   const mountRef = useRef(null)
 
   useEffect(() => {
+    // --- 1. Scene Setup ---
     const scene = new THREE.Scene()
-    scene.background = new THREE.Color("beige"); 
-   
+    scene.background = new THREE.Color('beige')
+
     const camera = new THREE.PerspectiveCamera(
       75,
       mountRef.current.clientWidth / mountRef.current.clientHeight,
@@ -21,40 +22,38 @@ const BrainScene = () => {
     renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight)
     mountRef.current.appendChild(renderer.domElement)
 
-    // === 2. Lights ===
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7) 
-    scene.add(ambientLight)
-
-    const pointLight = new THREE.PointLight(0xffffff, 1.2) //
-    pointLight.position.set(2, 3, 3)
-    scene.add(pointLight)
-
-    const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.2)
-    scene.add(hemiLight)
-
     
+    // --- 2. Lights ---
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7)
+    const pointLight = new THREE.PointLight(0xffffff, 1.2)
+    pointLight.position.set(2, 3, 3)
+    const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.2)
+    scene.add(ambientLight, pointLight, hemiLight)
 
-    //3. Load Brain Model
+    // --- 3. Load Brain Model ---
     const loader = new GLTFLoader()
     let brain
 
     loader.load(
-      '/Model/human_brain.glb', // path from public folder
+      '/Model/human_brain.glb',
       (gltf) => {
         console.log('✅ Model loaded:', gltf)
         brain = gltf.scene
-        brain.scale.set(0.08, 0.08, 0.08)
+
+        // 🔹 Responsive scaling
+        const isMobile = window.innerWidth < 768
+        const scale = isMobile ? 0.12 : 0.08
+        brain.scale.set(scale, scale, scale)
+
         brain.position.set(0, 0, 0)
         scene.add(brain)
 
-        // bright material to confirm visibility
+        // 🔹 Bring back that cool gradient color
         brain.traverse((child) => {
           if (child.isMesh) {
-            child.material = new THREE.MeshNormalMaterial(
-              { color: 0xff0066, // 🔴 hot pink/red color
-      metalness: 0.3,
-      roughness: 0.5,}
-            )
+            child.material = new THREE.MeshNormalMaterial({
+              flatShading: false,
+            })
           }
         })
       },
@@ -62,30 +61,39 @@ const BrainScene = () => {
       (error) => console.error('❌ Error loading model:', error)
     )
 
-    // === 4. Animation loop ===
+    // --- 4. Animation ---
     const animate = () => {
       requestAnimationFrame(animate)
-      if (brain) brain.rotation.y += 0.01
+      if (brain) {
+        brain.rotation.y += 0.007
+        // brain.rotation.x += 0.001
+      }
       renderer.render(scene, camera)
     }
     animate()
 
-    // === 5. Handle Resize ===
+    // --- 5. Resize handler ---
     const handleResize = () => {
       camera.aspect = mountRef.current.clientWidth / mountRef.current.clientHeight
       camera.updateProjectionMatrix()
       renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight)
+
+      if (brain) {
+        const isMobile = window.innerWidth < 768
+        const scale = isMobile ? 0.12 : 0.08
+        brain.scale.set(scale, scale, scale)
+      }
     }
     window.addEventListener('resize', handleResize)
 
-    // === Cleanup ===
+    // --- 6. Cleanup ---
     return () => {
       window.removeEventListener('resize', handleResize)
       mountRef.current.removeChild(renderer.domElement)
     }
   }, [])
 
-  return <div className="w-full h-screen" ref={mountRef}></div>
+  return <div className=" w-full items-center mx-auto h-[300px] lg:w-3/4 lg:h-3/4" ref={mountRef}></div>
 }
 
 export default BrainScene
