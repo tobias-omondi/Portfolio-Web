@@ -17,7 +17,7 @@ const Home = () => {
 
           <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-2'>
 
-            <div  className="w-full md:w-1/2  md:h-screen">
+            <div  className="w-full  md:h-screen">
                 <BrainScene />
             </div>
 

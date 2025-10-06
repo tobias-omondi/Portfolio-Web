@@ -94,7 +94,7 @@ const BrainScene = () => {
     }
   }, [])
 
-  return <div className=" w-full items-center mx-auto h-[300px] lg:w-2/3 lg:h-screen" ref={mountRef}></div>
+  return <div className=" w-full md:w-full items-center mx-auto h-[300px] md:h-[300px] lg:w-2/3 lg:h-screen" ref={mountRef}></div>
 }
 
 export default BrainScene
