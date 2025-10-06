@@ -17,7 +17,7 @@ const BrainScene = () => {
       0.1,
       1000
     )
-    camera.position.z = 32
+    camera.position.z = 34
 
     const renderer = new THREE.WebGLRenderer({ antialias: true })
     renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight)
@@ -94,7 +94,7 @@ const BrainScene = () => {
     }
   }, [])
 
-  return <div className=" w-full md:w-full items-center mx-auto h-[300px] md:h-[300px] lg:w-2/3 lg:h-screen" ref={mountRef}></div>
+  return <div className=" w-full md:w-full items-center mx-auto h-[300px]  lg:w-3/4 lg:h-[450px]" ref={mountRef}></div>
 }
 
 export default BrainScene

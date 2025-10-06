@@ -17,13 +17,13 @@ const Home = () => {
 
           <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-2'>
 
-            <div  className="w-full lg:w-1/2  lg:h-screen">
+            <div  className="w-full lg:w-2/3 ">
                 <BrainScene />
             </div>
 
-            <div className='flex flex-col space-y-5 px-3 text-center w-full lg:text-end lg:w-2/3'>
-            <h1 className='text-3xl md:text-5xl lg:text-5xl px-5 text-gray-400 font-medium'>When Imagination Ends, We Begin</h1>
-            <p className='text-xl text-gray-300'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+            <div className='flex flex-col space-y-5 px-3 w-full lg:text-end lg:w-2/3'>
+            <h1 className='text-3xl md:text-5xl lg:text-6xl px-5 text-gray-400 font-medium text-start'>When Imagination Ends, We Begin</h1>
+            <p className='text-xl text-gray-300 md:text-start px-5'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
           </div>
