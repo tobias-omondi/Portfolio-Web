@@ -15,9 +15,9 @@ const Home = () => {
           <h1 className='text-gray-100 text-5xl text-start px-3'>TOBZ <br/>STUDIO</h1>
 
 
-          <div className='flex flex-col md:flex-row-reverse justify-center items-center space-y-2'>
+          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-2'>
 
-            <div  className="w-full  md:h-screen">
+            <div  className="w-full lg:w-1/2  lg:h-screen">
                 <BrainScene />
             </div>
 
