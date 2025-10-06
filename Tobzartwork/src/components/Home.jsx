@@ -11,21 +11,25 @@ const Home = () => {
   return (
     <div >
       <Navbar />
-      <div className='mt-10'>
-          <h1 className='text-gray-700 text-4xl text-start px-3'>TOBZ <br/>STUDIO</h1>
-          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-x-2'>
+      <div className='mt-5'>
+          <h1 className='text-gray-100 text-5xl text-start px-3'>TOBZ <br/>STUDIO</h1>
+
+
+          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-2'>
 
             <div  className="w-full md:w-1/2  md:h-screen">
                 <BrainScene />
             </div>
 
             <div className='flex flex-col space-y-5 px-3 text-center w-full lg:text-end lg:w-2/3'>
-            <h1 className='text-4xl px-5 text-gray-400 font-medium'>When Imagination Ends, We Begin</h1>
-            <p className='text-xl text-gray-600'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+            <h1 className='text-3xl md:text-5xl lg:text-5xl px-5 text-gray-400 font-medium'>When Imagination Ends, We Begin</h1>
+            <p className='text-xl text-gray-300'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
           </div>
-          <p className='text-6xl lg:text-9xl font-bold text-cente'>WE CREATE FEELINGS</p>
+
+
+          <p className='text-6xl lg:text-9xl font-bold text-center text-gray-50'>WE CREATE FEELINGS</p>
       </div>
 
 

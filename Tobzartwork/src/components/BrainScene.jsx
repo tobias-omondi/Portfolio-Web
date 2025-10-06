@@ -8,7 +8,8 @@ const BrainScene = () => {
   useEffect(() => {
     // --- 1. Scene Setup ---
     const scene = new THREE.Scene()
-    scene.background = new THREE.Color('beige')
+  scene.background = new THREE.Color("rgb(41, 41, 41)")
+
 
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -93,7 +94,7 @@ const BrainScene = () => {
     }
   }, [])
 
-  return <div className=" w-full items-center mx-auto h-[300px] lg:w-3/4 lg:h-3/4" ref={mountRef}></div>
+  return <div className=" w-full items-center mx-auto h-[300px] lg:w-2/3 lg:h-screen" ref={mountRef}></div>
 }
 
 export default BrainScene
