@@ -11,13 +11,13 @@ import BrainScene from './BrainScene'
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all'
-import { useFetcher } from 'react-router-dom'
+import { SplitText } from 'gsap/SplitText';
 
 
 const Home = () => {
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger,  SplitText);
     gsap.fromTo(".hero",
       {  y: 0, },
         {
@@ -44,14 +44,31 @@ const Home = () => {
        y: -20,
       ease: "power3.inOut",
       boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;",
+      stagger: 0.06,
       scrollTrigger: {
         trigger: ".brand-name",
-        start: "top top",
+        start: "60px top",
         end: "bottom top",
         scrub:1.2,
       }
     }
     )
+    // text-animation
+    let split = new SplitText(".title", { type: "chars, words, lines" });
+       gsap.from(split.lines, {
+      y: 100,
+      opacity: 0,
+      stagger: {
+        amount: 0.05,
+      },
+      scrollTrigger: {
+        trigger: ".title",
+        start: "top 50%",
+        end: "bottom top",
+        scrub: 1.2,
+      }
+    });
+   
    
   }, [])
 
@@ -69,8 +86,8 @@ const Home = () => {
             </div>
 
             <div className='flex flex-col space-y-5 px-3 w-full lg:text-end lg:w-3/4'>
-            <h1 className='text-3xl md:text-5xl lg:text-6xl px-5 text-gray-400 font-medium text-start'>When Imagination Ends, We Begin</h1>
-            <p className='text-xl text-gray-300 md:text-start px-5'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-200 font-medium text-start'>When Imagination Ends, We Begin</h1>
+            <p className='title text-xl text-gray-300 md:text-start px-5'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
 
