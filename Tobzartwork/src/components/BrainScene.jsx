@@ -8,7 +8,7 @@ const BrainScene = () => {
   useEffect(() => {
     // --- 1. Scene Setup ---
     const scene = new THREE.Scene()
-  scene.background = new THREE.Color("rgb(41, 41, 41)")
+    scene.background = null;
 
 
     const camera = new THREE.PerspectiveCamera(
@@ -19,8 +19,11 @@ const BrainScene = () => {
     )
     camera.position.z = 34
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true })
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
     renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight)
+
+    // this makes the background fully transparent
+    renderer.setClearColor(0x000000, 0);
     mountRef.current.appendChild(renderer.domElement)
 
     
@@ -94,7 +97,7 @@ const BrainScene = () => {
     }
   }, [])
 
-  return <div className=" w-full md:w-full items-center mx-auto h-[300px]  lg:w-3/4 lg:h-[450px]" ref={mountRef}></div>
+  return <div className=" w-full md:w-full items-center mx-auto h-[300px]  lg:w-full lg:h-[450px]" ref={mountRef}></div>
 }
 
 export default BrainScene

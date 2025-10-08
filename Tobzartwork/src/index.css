@@ -27,7 +27,7 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
 /* scrollbar */
 
 ::-webkit-scrollbar {
-  width: 1px; 
+  width: 0px; 
 }
 
 ::-webkit-scrollbar-track {
