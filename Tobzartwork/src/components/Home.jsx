@@ -54,7 +54,7 @@ const Home = () => {
     let split = new SplitText(".title", { type: "chars, words, lines" });
        gsap.from(split.lines, {
       y: 100,
-      opacity: 0.7,
+      opacity: 0,
       stagger: {
         amount: 0.05,
       },
@@ -89,19 +89,18 @@ const Home = () => {
   return (
     <div >
       <Navbar />
-      <div className='-py-14'>
-         <h1 className='brand-name fixed text-white font-extrabold text-4xl text-start px-3  leading-tight'>TOBZ <br/>STUDIO</h1>
-
-      </div>
       <div className='mt-0'>
-          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-3'>
+          <h1 className='title fixed text-white font-extrabold text-4xl text-start px-3 brand-name leading-tight'>TOBZ <br/>STUDIO</h1>
+
+
+          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-10'>
 
             <div  className="w-full lg:w-3/4  hero ">
                 <BrainScene />
             </div>
 
             <div className='flex flex-col space-y-2 px-3 w-full lg:text-end '>
-            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-10 text-white font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</h1>
+            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-10 text-gray-100 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</h1>
             <p className='title text-xl text-white md:text-start px-10 w-full'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
@@ -115,7 +114,7 @@ const Home = () => {
 
 
        {/* About section */}
-      <div className='mt-72'>
+      <div className='mt-10'>
         <About />
       </div>
 
