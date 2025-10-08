@@ -48,7 +48,7 @@ const Home = () => {
       stagger: 0.06,
       scrollTrigger: {
         trigger: ".brand-name",
-        start: "60px top",
+        start: "top top",
         end: "bottom top",
         scrub:1.2,
       }
@@ -59,6 +59,7 @@ const Home = () => {
        gsap.from(split.lines, {
       y: 100,
       opacity: 0,
+      skewY: -10,
       stagger: {
         amount: 0.05,
       },
@@ -87,8 +88,8 @@ const Home = () => {
             </div>
 
             <div className='flex flex-col space-y-5 px-3 w-full lg:text-end lg:w-3/4'>
-            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-100 font-extrabold text-start'>When Imagination Ends, We Begin</h1>
-            <p className='title text-xl text-gray-300 md:text-start px-5'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-10 text-gray-100 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</h1>
+            <p className='title text-xl text-gray-300 md:text-start px-10'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
 
