@@ -39,10 +39,11 @@ const Home = () => {
       opacity: 1,
     },{
       scale: 0.6,
-      skewY: 1.7,
+      skewY: 3,
       opacity:0.4,
        y: -20,
       ease: "power3.inOut",
+      backgroundColor: "blue",
       boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;",
       stagger: 0.06,
       scrollTrigger: {
@@ -76,7 +77,7 @@ const Home = () => {
     <div >
       <Navbar />
       <div className='mt-5'>
-          <h1 className='title fixed text-gray-100 font-extrabold text-4xl text-start px-3 brand-name leading-tight'>TOBZ <br/>STUDIO</h1>
+          <h1 className='title fixed text-white font-extrabold text-4xl text-start px-3 brand-name leading-tight'>TOBZ <br/>STUDIO</h1>
 
 
           <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 py-14'>
@@ -86,7 +87,7 @@ const Home = () => {
             </div>
 
             <div className='flex flex-col space-y-5 px-3 w-full lg:text-end lg:w-3/4'>
-            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-200 font-medium text-start'>When Imagination Ends, We Begin</h1>
+            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-100 font-extrabold text-start'>When Imagination Ends, We Begin</h1>
             <p className='title text-xl text-gray-300 md:text-start px-5'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
