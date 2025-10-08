@@ -38,14 +38,10 @@ const Home = () => {
       scale:1,
       opacity: 1,
     },{
-      scale: 0.9,
-      skewY: 3,
+      scale: 0.4,
       opacity:0.4,
        y: -15,
-      ease: "power3.inOut",
-      backgroundColor: "blue",
-      boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;",
-      stagger: 0.06,
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".brand-name",
         start: "top top",
@@ -58,14 +54,30 @@ const Home = () => {
     let split = new SplitText(".title", { type: "chars, words, lines" });
        gsap.from(split.lines, {
       y: 100,
-      opacity: 0,
-      skewY: -10,
+      opacity: 0.7,
       stagger: {
         amount: 0.05,
       },
       scrollTrigger: {
         trigger: ".title",
         start: "top 50%",
+        end: "bottom top",
+        scrub: 1.2,
+      }
+    });
+
+     // text-animation
+    let splity = new SplitText(".title-name", { type: "chars, words, lines", smartWrap: true, charsClass: 'chars', wordsClass: 'words++' });
+       gsap.from(splity.chars, {
+      y: 100,
+      opacity: 1,
+      stagger: {
+        amount: 0.5,
+        from: 'end'
+      },
+      scrollTrigger: {
+        trigger: ".title-name",
+        start: "top 40%",
         end: "bottom top",
         scrub: 1.2,
       }
@@ -77,36 +89,33 @@ const Home = () => {
   return (
     <div >
       <Navbar />
-      <div className='mt-5'>
-          <h1 className='title fixed text-white font-extrabold text-4xl text-start px-3 brand-name leading-tight'>TOBZ <br/>STUDIO</h1>
+      <div className='-py-14'>
+         <h1 className='brand-name fixed text-white font-extrabold text-4xl text-start px-3  leading-tight'>TOBZ <br/>STUDIO</h1>
 
+      </div>
+      <div className='mt-0'>
+          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-3'>
 
-          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 py-14'>
-
-            <div  className="w-full lg:w-3/4 hero ">
+            <div  className="w-full lg:w-3/4  hero ">
                 <BrainScene />
             </div>
 
-            <div className='flex flex-col space-y-5 px-3 w-full lg:text-end '>
-            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-10 text-gray-100 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</h1>
-            <p className='title text-xl text-gray-300 md:text-start px-10'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+            <div className='flex flex-col space-y-2 px-3 w-full lg:text-end '>
+            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-10 text-white font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</h1>
+            <p className='title text-xl text-white md:text-start px-10 w-full'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
-
-            {/* <div>
-              <h1>Every idea starts as a flicker — a thought, a dream, a vision.Most stop there. But not us. We chase that flicker until it turns into fire.</h1>
-            </div> */}
           </div>
 
 
-          <p className='text-6xl lg:text-9xl font-bold text-center text-gray-50 mt-5'>WE CREATE FEELINGS</p>
+          <p className='title-name text-6xl lg:text-9xl font-bold text-center text-gray-50'>WE CREATE FEELINGS</p>
       </div>
 
 
 
 
        {/* About section */}
-      <div className='mt-10'>
+      <div className='mt-72'>
         <About />
       </div>
 
