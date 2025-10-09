@@ -55,12 +55,12 @@ const Home = () => {
       y: 90,
       opacity: 1,
       stagger: {
-        amount: 0.2,
+        amount: 0.4,
         from: 'random'
       },
       scrollTrigger: {
         trigger: ".title-name",
-        start: "top 20%",
+        start: "top 50%",
         end: "bottom top",
         scrub: 1.2,
       }
