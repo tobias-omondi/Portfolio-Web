@@ -42,7 +42,7 @@ const Home = () => {
       y: () => gsap.utils.random(50, 100),
       stagger: {
         amount: 0.09,
-        from: "random",,
+        from: "random"
       },
     },[]);
 
