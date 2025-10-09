@@ -35,16 +35,18 @@ const Home = () => {
     )
     // text-animation
     let split = new SplitText(".title", { type: "chars, words, lines" });
-       gsap.from(split.lines, {
-      y: 100,
-      opacity: 0.5,
+       gsap.from(split.chars, {
+      y: 40,
+      opacity: 0.8,
+      from: "random (100, 10)",
       stagger: {
-        amount: 0.05,
+        amount: 0.3,
+        from: "random"
       },
       scrollTrigger: {
         trigger: ".title",
-        start: "top 50%",
-        end: "bottom top",
+        start: "top 10%",
+        end: "bottom +=600",
         scrub: 1.2,
       }
     });
@@ -72,7 +74,7 @@ const Home = () => {
   return (
     <div >
       <Navbar />
-      <div className='mt-20'>
+      <div className='mt-5'>
           <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-7'>
             <div  className="w-full lg:w-3/4  hero ">
                 <BrainScene />

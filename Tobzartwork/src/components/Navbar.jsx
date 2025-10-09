@@ -104,30 +104,14 @@ const Navbar = () => {
         {scale: 1, opacity: 1, duration:0.7, delay:0.3, ease:"power3.inOut"}
       )
     }
-       gsap.fromTo(".brand-name",
-           { y: 0,
-          scale:1,
-          opacity: 1,
-        },{
-          scale: 0.4,
-          opacity:0.4,
-           y: -15,
-          ease: "power1.inOut",
-          scrollTrigger: {
-            trigger: ".brand-name",
-            start: "top top",
-            end: "bottom top",
-            scrub:1.2,
-          }
-        }
-        )
   }, [toggleMenu])
 
   return (
     <div className='w-full'>
       {/* Top-right button (always in same position) */}
-      <div className="title fixed top-5 left-8 z-50"> 
-        <h1 className='fixed text-white font-extralight text-4xl text-start px-3 brand-name leading-tight'>TOBZ <br/>STUDIO</h1></div>
+      <div className="fixed z-50 "> 
+        <h1 className='text-white font-extrabold text-3xl text-start px-3'>TOBZ</h1>
+        </div>
 
       <div className="fixed top-5 right-8 z-50">
         {!toggleMenu ? (
