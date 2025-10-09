@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 // import gsap
 import gsap from 'gsap'
@@ -6,6 +6,13 @@ import { ScrollTrigger } from 'gsap/all'
 import { SplitText } from 'gsap/all'
 
 const About = () => {
+
+  useEffect (() => {
+    gsap.registerPlugin(ScrollTrigger, SplitText)
+    gsap.from(".about",{
+      y: 0
+    })
+  })
   return (
     <div className='text-name mt-10'>
       <h1 className='text-6xl text-center text-gray-50'>About</h1>  

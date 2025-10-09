@@ -54,7 +54,7 @@ const Home = () => {
      // text-animation
     let splity = new SplitText(".title-name", { type: "chars, words, lines", smartWrap: true, charsClass: 'chars', wordsClass: 'words++' });
        gsap.from(splity.chars, {
-      y: 90,
+      y: 100,
       opacity: 1,
       stagger: {
         amount: 0.5,
