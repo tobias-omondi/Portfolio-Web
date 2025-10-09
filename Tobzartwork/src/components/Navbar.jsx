@@ -5,8 +5,8 @@ import { gsap } from 'gsap'
 
 const navbarMenu = [
   {name: 'HOME', link: '/'},
+   {name: 'ABOUT', link: '/About'},
   {name: 'WORK', link: '/Work'},
-  {name: 'ABOUT', link: '/About'},
   {name: 'CONTACT', link: '/Contact'}
 ]
 

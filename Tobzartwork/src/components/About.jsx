@@ -21,7 +21,7 @@ const About = () => {
         wordsClass: 'words++'
       });
       
-      gsap.set(splitText.chars, { opacity: 0, y: 200 });
+      gsap.set(splitText.chars, { opacity: 0, y: 1000 });
       gsap.to(splitText.chars, {
         y: 0,
         opacity: 1,
@@ -38,7 +38,25 @@ const About = () => {
           end: "top 40%",
           scrub: 1.5,
         },
-      });
+      })
+        gsap.fromTo(".country",
+      {  y: 0,
+        skewY: 20,
+       },
+        {
+        y: 800,
+        skewY: 20,
+        ease: "power3.inout",
+        scrollTrigger:{
+          trigger:".hero",
+          start: "top 80%",
+          end: "bottom 40%",
+          scrub: 1.5,
+          animated:true,
+          // markers: true,
+        }
+      },
+    );
 
       return () => {
         // Revert SplitText instance to avoid duplicates
@@ -52,14 +70,13 @@ const About = () => {
   }, []); // Empty dependency array for one-time run
 
   return (
-    <div className='text-name mt-10' ref={aboutRef}>
-      <h1 className='text-6xl text-center text-gray-50'>About</h1>
+    <div className='text-name mt-20' ref={aboutRef}>
       <div>
         <p className='about-me text-2xl w-full md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
           <span className='text-3xl lg:text-6xl'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a <br/>
           <span className='font-bold'> Front-End Developer and UI/UX Designer</span> <br/>
           who loves creating amazing things that go beyond imagination.based in <br/>
-          <span className='bg-white px-5 py-2 skew-y-6 shadow-2xl text-shadow-blue-500 '>Nairobi,Kenya</span>
+          <span className='country bg-white px-5 py-2 skew-y-6 shadow-2xl rounded-xl '>Nairobi,Kenya</span>
         </p>
       </div>
     </div>

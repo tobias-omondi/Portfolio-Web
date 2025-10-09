@@ -44,3 +44,9 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
   background: blue;
 }
 
+.country{
+  background: white;
+  border: 5px solid transparent; 
+  border-image: url('https://cdn.pixabay.com/photo/2022/06/26/20/47/cover-7286281_1280.jpg') 30 round;
+}
+

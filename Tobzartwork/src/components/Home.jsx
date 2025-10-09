@@ -25,11 +25,11 @@ const Home = () => {
         ease: "power3.inout",
         scrollTrigger:{
           trigger:".hero",
-          start: "top top",
-          end: "bottom+=700 top",
+          start: "top 20%",
+          end: "top 80%",
           scrub: 1.5,
           animated:true,
-          // markers: true,
+          markers: true,
         }
       },
     )
