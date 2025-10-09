@@ -2,7 +2,7 @@
 
 body{
   font-family: 'Melodrama', serif;
-  background-color: beige;
+  background-color: rgb(19, 19, 19);
 }
 
 h1, h2, h3, h4, h5, h6 .brand-name {
@@ -46,7 +46,7 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
 
 .country{
   background: white;
-  border: 5px solid transparent; 
+  border: 3px solid transparent; 
   border-image: url('https://cdn.pixabay.com/photo/2022/06/26/20/47/cover-7286281_1280.jpg') 30 round;
 }
 

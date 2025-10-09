@@ -29,27 +29,22 @@ const Home = () => {
           end: "bottom+=900 top",
           scrub: 1.5,
           animated:true,
-          markers: true,
+          // markers: true,
         }
       },
     )
     // text-animation
-    let split = new SplitText(".title", { type: "chars, words, lines" });
-       gsap.from(split.chars, {
+    let split = new SplitText(".title", { type: "chars, words, lines, character" });
+       gsap.from(split.words, {
       y: 0,
       opacity: 0.9,
-      from: "random (100, 10)",
+      duration: 3.5,
+      y: () => gsap.utils.random(50, 100),
       stagger: {
-        amount: 0.05,
+        amount: 0.09,
         from: "random"
       },
-      scrollTrigger: {
-        trigger: ".title",
-        start: "top 10%",
-        end: "bottom +=600",
-        scrub: 1.2,
-      }
-    });
+    },[]);
 
      // text-animation
     let splity = new SplitText(".title-name", { type: "chars, words, lines", smartWrap: true, charsClass: 'chars', wordsClass: 'words++' });
@@ -81,15 +76,15 @@ const Home = () => {
                 <BrainScene />
             </div>
 
-            <div className='flex flex-col space-y-2 w-full lg:text-end '>
-            <p className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-950 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</p>
-            <h1 className='title text-xl text-black md:text-start px-5 w-full'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+            <div className='title flex flex-col space-y-2 w-full lg:text-end '>
+            <p className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-50 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</p>
+            <h1 className='title text-xl text-white md:text-start px-5 w-full space-y-2'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</h1>
             </div>
           </div>
 
 
-          <p className='title-name text-6xl lg:text-9xl font-extrabold text-center text-gray-900'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
+          <p className='title-name text-6xl lg:text-9xl font-extrabold text-center text-gray-100'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
       </div>
 
 

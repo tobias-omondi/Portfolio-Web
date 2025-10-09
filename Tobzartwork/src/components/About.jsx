@@ -72,11 +72,11 @@ const About = () => {
   return (
     <div className='text-name mt-20' ref={aboutRef}>
       <div>
-        <p className='about-me text-2xl w-full md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
-          <span className='text-3xl lg:text-6xl'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a <br/>
-          <span className='font-bold'> Front-End Developer and UI/UX Designer</span> <br/>
+        <p className='text-white about-me text-2xl w-full md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
+          <span className='text-3xl lg:text-6xl'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a 
+          <span className='font-bold text-blue-400'> Front-End Developer and UI/UX Designer</span> 
           who loves creating amazing things that go beyond imagination.based in <br/>
-          <span className='country bg-white px-5 py-2 skew-y-6 shadow-2xl rounded-xl '>Nairobi,Kenya</span>
+          <span className='country bg-white px-5 py-2 skew-y-6 shadow-2xl rounded-xl text-black '>Nairobi,Kenya</span>
         </p>
       </div>
     </div>
