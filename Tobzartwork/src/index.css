@@ -6,7 +6,8 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 .brand-name {
-  font-family: 'Melodrama', serif;
+  /* font-family: 'Melodrama', serif; */
+    font-family: 'Clash Grotesk', sans-serif;
 }
 
 p, li, a, span, button, input, textarea .body-text-view{
