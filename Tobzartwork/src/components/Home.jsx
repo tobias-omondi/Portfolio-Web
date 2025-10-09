@@ -21,7 +21,7 @@ const Home = () => {
     gsap.fromTo(".hero",
       {  y: 0, },
         {
-        y: 700,
+        y: 800,
         ease: "power3.inout",
         scrollTrigger:{
           trigger:".hero",
@@ -36,7 +36,7 @@ const Home = () => {
     // text-animation
     let split = new SplitText(".title", { type: "chars, words, lines" });
        gsap.from(split.chars, {
-      y: 40,
+      y: 0,
       opacity: 0.9,
       from: "random (100, 10)",
       stagger: {
@@ -54,16 +54,17 @@ const Home = () => {
      // text-animation
     let splity = new SplitText(".title-name", { type: "chars, words, lines", smartWrap: true, charsClass: 'chars', wordsClass: 'words++' });
        gsap.from(splity.chars, {
-      y: 100,
+      y: 60,
       opacity: 1,
       stagger: {
         amount: 0.5,
-        from: 'end'
+        from: 'random',
+        grid: 'auto'
       },
       scrollTrigger: {
         trigger: ".title-name",
         start: "top 50%",
-        end: "bottom top",
+        end: "top 20%",
         scrub: 1.2,
       }
     });
@@ -76,7 +77,7 @@ const Home = () => {
       <Navbar />
       <div className='mt-5'>
           <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-7'>
-            <div  className="w-full lg:w-3/4  hero ">
+            <div  className="w-full lg:w-3/4 hero ">
                 <BrainScene />
             </div>
 
