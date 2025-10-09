@@ -33,28 +33,11 @@ const Home = () => {
         }
       },
     )
-    gsap.fromTo(".brand-name",
-       { y: 0,
-      scale:1,
-      opacity: 1,
-    },{
-      scale: 0.4,
-      opacity:0.4,
-       y: -15,
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: ".brand-name",
-        start: "top top",
-        end: "bottom top",
-        scrub:1.2,
-      }
-    }
-    )
     // text-animation
     let split = new SplitText(".title", { type: "chars, words, lines" });
        gsap.from(split.lines, {
       y: 100,
-      opacity: 0,
+      opacity: 0.5,
       stagger: {
         amount: 0.05,
       },
@@ -69,15 +52,15 @@ const Home = () => {
      // text-animation
     let splity = new SplitText(".title-name", { type: "chars, words, lines", smartWrap: true, charsClass: 'chars', wordsClass: 'words++' });
        gsap.from(splity.chars, {
-      y: 100,
+      y: 90,
       opacity: 1,
       stagger: {
-        amount: 0.5,
-        from: 'end'
+        amount: 0.2,
+        from: 'random'
       },
       scrollTrigger: {
         trigger: ".title-name",
-        start: "top 40%",
+        start: "top 20%",
         end: "bottom top",
         scrub: 1.2,
       }
@@ -89,12 +72,8 @@ const Home = () => {
   return (
     <div >
       <Navbar />
-      <div className='mt-0'>
-          <h1 className='title fixed text-white font-extrabold text-4xl text-start px-3 brand-name leading-tight'>TOBZ <br/>STUDIO</h1>
-
-
-          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-10'>
-
+      <div className='mt-20'>
+          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-7'>
             <div  className="w-full lg:w-3/4  hero ">
                 <BrainScene />
             </div>
@@ -107,7 +86,7 @@ const Home = () => {
           </div>
 
 
-          <p className='title-name text-6xl lg:text-9xl font-bold text-center text-gray-50'>WE CREATE FEELINGS</p>
+          <p className='title-name text-6xl lg:text-9xl font-extrabold text-center text-gray-50'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
       </div>
 
 
