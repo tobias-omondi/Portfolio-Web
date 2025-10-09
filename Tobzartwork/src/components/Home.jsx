@@ -21,12 +21,12 @@ const Home = () => {
     gsap.fromTo(".hero",
       {  y: 0, },
         {
-        y: 800,
+        y: 500,
         ease: "power3.inout",
         scrollTrigger:{
           trigger:".hero",
-          start: "top 20%",
-          end: "top 80%",
+          start: "top top",
+          end: "bottom+=900 top",
           scrub: 1.5,
           animated:true,
           markers: true,
