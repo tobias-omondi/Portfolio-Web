@@ -109,7 +109,7 @@ const Navbar = () => {
   return (
     <div className='w-full'>
       {/* Top-right button (always in same position) */}
-      <div className="fixed z-50 "> 
+      <div className="fixed z-10 "> 
         <h1 className='text-white font-extrabold text-3xl text-start px-3'>TOBZ</h1>
         </div>
 

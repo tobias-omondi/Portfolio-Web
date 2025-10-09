@@ -40,7 +40,7 @@ const Home = () => {
       opacity: 0.8,
       from: "random (100, 10)",
       stagger: {
-        amount: 0.3,
+        amount: 0.05,
         from: "random"
       },
       scrollTrigger: {
@@ -88,7 +88,7 @@ const Home = () => {
           </div>
 
 
-          <p className='title-name text-6xl lg:text-9xl font-extrabold text-center text-gray-50'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
+          <p className='title-name text-6xl lg:text-8xl font-extrabold text-center text-gray-50'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
       </div>
 
 
