@@ -37,7 +37,7 @@ const Home = () => {
     let split = new SplitText(".title", { type: "chars, words, lines" });
        gsap.from(split.chars, {
       y: 40,
-      opacity: 0.8,
+      opacity: 0.9,
       from: "random (100, 10)",
       stagger: {
         amount: 0.05,
@@ -80,10 +80,10 @@ const Home = () => {
                 <BrainScene />
             </div>
 
-            <div className='flex flex-col space-y-2 px-3 w-full lg:text-end '>
-            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-10 text-gray-800 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</h1>
-            <p className='title text-xl text-black md:text-start px-10 w-full'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
-               When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
+            <div className='flex flex-col space-y-2 w-full lg:text-end '>
+            <p className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-950 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</p>
+            <h1 className='title text-xl text-black md:text-start px-5 w-full'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+               When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</h1>
             </div>
           </div>
 
