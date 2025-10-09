@@ -57,7 +57,7 @@ const Home = () => {
       y: 90,
       opacity: 1,
       stagger: {
-        amount: 0.4,
+        amount: 0.5,
         from: 'random'
       },
       scrollTrigger: {
@@ -81,14 +81,14 @@ const Home = () => {
             </div>
 
             <div className='flex flex-col space-y-2 px-3 w-full lg:text-end '>
-            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-10 text-gray-100 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</h1>
-            <p className='title text-xl text-white md:text-start px-10 w-full'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-10 text-gray-800 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</h1>
+            <p className='title text-xl text-black md:text-start px-10 w-full'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
           </div>
 
 
-          <p className='title-name text-6xl lg:text-8xl font-extrabold text-center text-gray-50'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
+          <p className='title-name text-6xl lg:text-8xl font-extrabold text-center text-gray-900'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
       </div>
 
 
