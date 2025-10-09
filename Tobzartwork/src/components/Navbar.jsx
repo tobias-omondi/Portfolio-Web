@@ -126,7 +126,9 @@ const Navbar = () => {
   return (
     <div className='w-full'>
       {/* Top-right button (always in same position) */}
-      <div className="fixed top-5 left-8 z-50"> <h1 className='title fixed text-white font-extralight text-4xl text-start px-3 brand-name leading-tight'>TOBZ <br/>STUDIO</h1></div>
+      <div className="title fixed top-5 left-8 z-50"> 
+        <h1 className='fixed text-white font-extralight text-4xl text-start px-3 brand-name leading-tight'>TOBZ <br/>STUDIO</h1></div>
+
       <div className="fixed top-5 right-8 z-50">
         {!toggleMenu ? (
           <button
