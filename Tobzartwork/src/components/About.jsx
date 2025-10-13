@@ -30,7 +30,7 @@ const About = () => {
            from: 11,
            axis: "x",
            ease: "power2.in",
-           amount: 1.6
+           amount: 1.9
         },
         scrollTrigger: {
           trigger: ".about-me",
@@ -70,7 +70,7 @@ const About = () => {
   }, []); // Empty dependency array for one-time run
 
   return (
-    <div className='text-name mt-20' ref={aboutRef}>
+    <div className='text-name mt-20 py-20' ref={aboutRef}>
       <div>
         <p className='text-white about-me text-2xl w-full md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
           <span className='text-3xl lg:text-6xl'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a 

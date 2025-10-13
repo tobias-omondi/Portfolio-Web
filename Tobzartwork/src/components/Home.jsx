@@ -53,8 +53,8 @@ const Home = () => {
       y: 60,
       opacity: 1,
       stagger: {
-        amount: 0.5,
-        from: 'random',
+        amount: 0.9,
+        from: 'center',
         grid: 'auto'
       },
       scrollTrigger: {
@@ -85,7 +85,7 @@ const Home = () => {
           </div>
 
 
-          <p className='title-name text-6xl lg:text-9xl font-extrabold text-center text-gray-100'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
+          <p className='title-name text-6xl lg:text-9xl font-extrabold text-center text-gray-100 py-10'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
       </div>
 
 
