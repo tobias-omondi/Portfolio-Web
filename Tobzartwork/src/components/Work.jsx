@@ -22,7 +22,7 @@ const Work = () => {
               <img 
                 src={portfolioItem.image} 
                 alt={portfolioItem.title} 
-                className='w-full h-full object-cover mt-5 transform skew-y-[17deg] brightness-75 shadow-2xl' 
+                className='w-full h-full object-cover mt-5 transform skew-y-[17deg] brightness-75 shadow-2xl shadow-amber-400' 
               />
             </div>
 
