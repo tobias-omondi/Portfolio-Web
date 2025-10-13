@@ -50,3 +50,8 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
   border-image: url('https://cdn.pixabay.com/photo/2022/06/26/20/47/cover-7286281_1280.jpg') 30 round;
 }
 
+.design-bg{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsU41Y0jOw3lttMu4TCEaadptaCSqgDtg3aA&s');
+  object-fit: cover;
+}
+
