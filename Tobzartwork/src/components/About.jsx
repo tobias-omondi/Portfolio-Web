@@ -21,15 +21,15 @@ const About = () => {
         wordsClass: 'words++'
       });
       
-      gsap.set(splitText.chars, { opacity: 0, y: 1000 });
+      gsap.set(splitText.chars, { opacity: 0, scale: 0 });
       gsap.to(splitText.chars, {
-        y: 0,
+        scale: 1,
         opacity: 1,
         stagger: {
            grid: [7,15],
-           from: 11,
+           from: 'end',
            axis: "x",
-           ease: "power2.in",
+           ease: "power3.in",
            amount: 1.9
         },
         scrollTrigger: {
