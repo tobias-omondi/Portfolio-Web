@@ -2,7 +2,10 @@
 
 body{
   font-family: 'Melodrama', serif;
-  background-color: rgb(19, 19, 19);
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 .brand-name {
