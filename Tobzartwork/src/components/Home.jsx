@@ -19,15 +19,15 @@ const Home = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger,  SplitText);
     gsap.fromTo(".hero",
-      {  y: 0, },
+      {  y: 0, scale: 1 },
         {
-        y: 600,
-        scale: 0.2,
+        y: 800,
+        scale: 0.8,
         ease: "power3.inout",
         scrollTrigger:{
           trigger:".hero",
           start: "top top",
-          end: "bottom+=900 top",
+          end: "bottom+=500 top",
           scrub: 1.5,
           animated:true,
           // markers: true,
@@ -73,19 +73,19 @@ const Home = () => {
       <Navbar />
       <div className='mt-5'>
           <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-7'>
-            <div  className="w-full lg:w-3/4 hero ">
+            <div  className="w-full lg:w-4/5 hero ">
                 <BrainScene />
             </div>
 
             <div className='title flex flex-col space-y-2 w-full lg:text-end '>
-            <p className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-50 font-extrabold text-start text-shadow-2xs'>When Imagination Ends, We Begin</p>
+            <p className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-50 font-extrabold text-start '>When Imagination Ends, We Begin</p>
             <h1 className='title text-xl text-white md:text-start px-5 w-full space-y-2'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
                When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</h1>
             </div>
           </div>
 
 
-          <p className='title-name text-6xl lg:text-9xl font-extrabold text-center text-gray-100 py-10'>WE CRE<span className='text-blue-500'>ATE </span> FEELINGS</p>
+          <p className='title-name text-6xl lg:text-9xl font-black text-center text-gray-300 py-10'>WE CREATE FEELINGS</p>
       </div>
 
 

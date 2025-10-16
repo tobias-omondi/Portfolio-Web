@@ -59,12 +59,10 @@ const About = () => {
     );
 
       return () => {
-        // Revert SplitText instance to avoid duplicates
         splitText.revert();
       };
-    }, aboutRef); // Scope the GSAP context to the ref
+    }, aboutRef); 
 
-    // Cleanup function that reverts all animations
     return () => ctx.revert();
 
   }, []); // Empty dependency array for one-time run
@@ -72,7 +70,7 @@ const About = () => {
   return (
     <div className='text-name mt-20 py-20' ref={aboutRef}>
       <div>
-        <p className='text-white about-me text-2xl w-full md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
+        <p className='text-white about-me text-2xl w-full lg:w-3/4 md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
           <span className='text-3xl lg:text-6xl'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a 
           <span className='font-bold text-blue-400'> Front-End Developer and UI/UX Designer</span> 
           who loves creating amazing things that go beyond imagination.based in <br/>

@@ -57,6 +57,7 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsU41Y0jOw3lttMu4TCEaadptaCSqgDtg3aA&s');
   object-fit: cover;
   border: 3px solid transparent; 
-  border-image: url('https://t4.ftcdn.net/jpg/04/94/85/25/360_F_494852538_r8ylVApdAY0YuWYCkWIsg5pDZkboERYI.jpg') 30 round;
+  border-image: url('https://www.shutterstock.com/image-photo/empty-product-placement-stage-natural-600nw-2518019831.jpg') 30 round;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 

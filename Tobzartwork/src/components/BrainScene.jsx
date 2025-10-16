@@ -55,8 +55,11 @@ const BrainScene = () => {
         // 🔹 Bring back that cool gradient color
         brain.traverse((child) => {
           if (child.isMesh) {
-            child.material = new THREE.MeshNormalMaterial({
-              flatShading: false,
+            child.material = new THREE.MeshPhysicalMaterial({
+              color: 0xF5F5DC,// Bright cyan
+              wireframe: true,
+              roughness: 0.1,
+              metalness: 0.5,
             })
           }
         })
@@ -75,6 +78,7 @@ const BrainScene = () => {
       renderer.render(scene, camera)
     }
     animate()
+    
 
     // --- 5. Resize handler ---
     const handleResize = () => {
