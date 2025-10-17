@@ -108,7 +108,7 @@ const Work = () => {
                 <img
                   src={portfolioItem.image}
                   alt={portfolioItem.title}
-                  className="w-full h-full object-contain md:object-cover rounded-2xl brightness-90 transition-transform duration-700 hover:scale-[1.05]"
+                  className="w-full h-full object-contain md:object-cover rounded-xl brightness-90 transition-transform duration-700 hover:scale-[1.05]"
                 />
               </div>
             </div>
@@ -133,7 +133,7 @@ const Work = () => {
             <div className='flex flex-col md:flex-row gap-10 '>
               {projectImage.map((item) => (
                 <div key={item.id}>
-                  <img src={item.projectImage} className='w-full h-full rounded-2xl shadow-2xl' />
+                  <img src={item.projectImage} className='w-full h-full rounded shadow-2xl brightness-75' />
                   <a key={item.id}
                     href={item.link}
                     target="_blank"
