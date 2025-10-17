@@ -3,9 +3,14 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
-// work images
 import designImage from '/src/assets/_.avif';
 import designImage1 from '/src/assets/schoolproject.avif';
+
+// work
+import projectOne from "/src/assets/work.avif"
+import projectTwo from "/src/assets/Untitled design (3).png"
+
+import { FaLinkSlash } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +33,11 @@ const workPortfolio = [
   },
 ];
 
+const projectImage = [
+  {id: 1, projectImage: projectOne, link: "https://schoolapplication-one.vercel.app/"},
+  {id: 2, projectImage: projectTwo, link: "https://lapa-weld.vercel.app/"}
+]
+
 const Work = () => {
   const containerRef = useRef(null);
   const horizontalSectionRef = useRef(null);
@@ -44,7 +54,11 @@ const Work = () => {
         trigger: horizontalSectionRef.current,
         pin: true,
         scrub: 1,
-        end: () => `+=${horizontalSectionRef.current.scrollWidth}`,
+        end: () =>
+          "+=" +
+          (horizontalSectionRef.current.scrollWidth - window.innerWidth),
+        invalidateOnRefresh: true,
+        // markers: true,
       },
     });
 
@@ -55,7 +69,7 @@ const Work = () => {
       {
         opacity: 1,
         scale: 1,
-        ease: 'power4.out',
+        ease: 'power3.out',
         scrollTrigger: {
           trigger: horizontalSectionRef.current,
           start: 'top center',
@@ -66,23 +80,25 @@ const Work = () => {
     );
   }, { scope: containerRef });
 
+  // Number of total panels including last one
+  const totalPanels = workPortfolio.length + 1;
+
   return (
     <div ref={containerRef} className="overflow-x-hidden">
-      {/* Spacer to allow initial scroll down to horizontal section */}
-      <div aria-hidden="true" />
+      <div className='bg-transparent' aria-hidden="true" />
 
-      {/* Horizontal section */}
       <div
         ref={horizontalSectionRef}
-        className="relative flex flex-row flex-nowrap items-center overflow-hidden w-[300vw] md:w-[200vw] h-screen"
+        // Width large enough for all panels
+        className={`relative flex flex-row flex-nowrap items-center overflow-hidden w-[${totalPanels * 100}vw] h-screen`}
+        style={{ width: `${totalPanels * 100}vw` }}
       >
         {workPortfolio.map((portfolioItem, index) => (
           <div
             key={portfolioItem.id}
             ref={(el) => (panelsRef.current[index] = el)}
-            className="horizontal-panel w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0"
+            className="horizontal-panel w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0 title-work"
           >
-            {/* IMAGE SECTION */}
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-8">
               <p className="text-2xl md:text-4xl text-center text-gray-200 font-bold mb-4 px-4 py-2 rounded bg-blue-800">
                 {portfolioItem.title}
@@ -97,7 +113,6 @@ const Work = () => {
               </div>
             </div>
 
-            {/* TEXT SECTION */}
             <div className="w-full md:w-1/2 text-center md:text-left p-4 md:p-8 flex flex-col items-center md:items-start justify-center">
               <p className="text-3xl md:text-5xl font-bold text-gray-100 mb-3 title-work">
                 {portfolioItem.topictitle}
@@ -109,9 +124,23 @@ const Work = () => {
           </div>
         ))}
 
-        {/* LAST PANEL */}
-        <div className="horizontal-panel w-screen h-full flex items-center justify-center bg-blue-700">
-          <p className="text-white text-3xl md:text-5xl font-bold">PROJECT SELECTED</p>
+        {/* Last Panel */}
+        <div
+          ref={(el) => (panelsRef.current[workPortfolio.length] = el)}
+          className="horizontal-panel w-screen h-full flex items-center justify-center"
+        >
+          <div className=' w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0 title-work'>
+            <div className='flex flex-col md:flex-row gap-10 '>
+              {projectImage.map((item) => (
+                <div key={item.id}>
+                  <img src={item.projectImage} className='w-full h-full rounded-2xl shadow-2xl' />
+                  <h1 className='text-shadow-amber-50'>{item.link}
+                    <FaLinkSlash />
+                  </h1>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
