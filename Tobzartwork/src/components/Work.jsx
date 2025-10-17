@@ -134,9 +134,11 @@ const Work = () => {
               {projectImage.map((item) => (
                 <div key={item.id}>
                   <img src={item.projectImage} className='w-full h-full rounded-2xl shadow-2xl' />
-                  <h1 className='text-shadow-amber-50'>{item.link}
-                    <FaLinkSlash />
-                  </h1>
+                  <a key={item.id}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                   className="text-blue-500 hover:text-blue-300 text-xl transition-transform duration-300 hover:scale-110 text-end"><FaLinkSlash /></a>
                 </div>
               ))}
             </div>
