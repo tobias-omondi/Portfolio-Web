@@ -8,7 +8,7 @@ import designImage1 from '/src/assets/schoolproject.avif';
 
 // work
 import projectOne from "/src/assets/work.avif"
-import projectTwo from "/src/assets/Untitled design (3).png"
+import projectTwo from "/src/assets/work2.avif"
 
 import { FaLinkSlash } from "react-icons/fa6";
 

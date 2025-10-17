@@ -92,21 +92,21 @@ const Home = () => {
 
 
        {/* About section */}
-      <div className='mt-10'>
+      <div >
         <About />
       </div>
 
       {/* Work section */}
-      <div className='mt-10'>
+      <div >
         <Work />
       </div>
 
       {/* Contact section */}
-      <div className='mt-10'>
+      <div>
         <Contact />
       </div>
       {/* footer section */}
-      <div className='mt-20'>
+      <div>
         <Footer />
       </div>
     </div>
