@@ -57,7 +57,7 @@ const DesignWork = () => {
       scrollTrigger : {
         trigger: ".cards-container",
         start: "top top",
-        end: `+=${(cards.length - 1) * 300}`, // Adjust scroll length based on number of cards
+        end: `+=${(cards.length - 1) * 300}`, 
         pin: true,
         scrub: 1.5,
         markers: true,
