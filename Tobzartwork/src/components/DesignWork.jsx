@@ -47,7 +47,7 @@ const DesignWork = () => {
           start: "bottom bottom",
           end: "top top",
           scrub: 1.5,
-          markers: true
+          // markers: true
         }
       }
     ),
@@ -60,7 +60,7 @@ const DesignWork = () => {
         end: `+=${(cards.length - 1) * 300}`, 
         pin: true,
         scrub: 1.5,
-        markers: true,
+        // markers: true,
         pinSpacing: true,
       },
     }).fromTo (cards, {
