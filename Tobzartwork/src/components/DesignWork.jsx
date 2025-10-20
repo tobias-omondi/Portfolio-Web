@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 // lets import images
 import designImage from "/src/assets/design.avif"
 import designImage1 from "/src/assets/work.avif"
 import designImage2 from "/src/assets/Today's poster.jpeg"
+
+// use gsap import
+
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 
 
 const DesignCards = [
@@ -18,14 +23,15 @@ const DesignCards = [
 ]
 
 const DesignWork = () => {
+
   return (
     <div>
       <div>
-        <p className='text-center text-6xl text-gray-50'>TASTE BY DESIGN</p>
+        <p className='text-center text-6xl text-gray-50 design-taste'>TASTE BY DESIGN</p>
         {DesignCards.map(item => (
           <div key={item.id} style={{backgroundColor: item.color}} className='h-[450px] md:h-[670px] mt-10 justify-between flex flex-col md:w-3/4 mx-auto rounded md:px-5 cursor-pointer'>
             <p className='text-gray-700 text-3xl text-center mt-5 font-extrabold'>{item.title}</p>
-            <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[500px] mx-auto items-center rounded shadow-xl object-cover mb-10 brightness-75'/>
+            <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[500px] mx-auto items-center md:rounded shadow-xl object-cover mb-10 brightness-75'/>
             <h1 className='text-end px-3 text-gray-700'>{item.description}</h1>
           </div>
         ))}
