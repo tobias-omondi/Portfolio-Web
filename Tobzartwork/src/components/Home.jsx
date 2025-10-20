@@ -12,6 +12,7 @@ import BrainScene from './BrainScene'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all'
 import { SplitText } from 'gsap/SplitText';
+import DesignWork from './DesignWork'
 
 
 const Home = () => {
@@ -101,10 +102,16 @@ const Home = () => {
         <Work />
       </div>
 
+
+      <div>
+        <DesignWork />
+      </div>
+
       {/* Contact section */}
       <div>
         <Contact />
       </div>
+      
       {/* footer section */}
       <div>
         <Footer />
