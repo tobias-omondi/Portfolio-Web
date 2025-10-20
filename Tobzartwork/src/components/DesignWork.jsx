@@ -9,6 +9,9 @@ import designImage2 from "/src/assets/Today's poster.jpeg"
 
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/all'
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 const DesignCards = [
@@ -24,17 +27,63 @@ const DesignCards = [
 
 const DesignWork = () => {
 
+  // Animation for the cards stacking effect 
+    const cards = gsap.utils.toArray(".design-card:not(:first-child)"); 
+
+  useGSAP (() => {
+    gsap.fromTo (".design-text", 
+      {scale: 0.5,
+        opacity: 0.4,
+        ease: "power3.inOut",
+        skewX: 0,
+      },
+      {
+        scale: 0.8,
+        skewX: 10,
+        opacity: 1,
+        duration: 0.07,
+        scrollTrigger : {
+          trigger: ".design-text",
+          start: "bottom bottom",
+          end: "top top",
+          scrub: 1.5,
+          markers: true
+        }
+      }
+    ),
+
+  
+    gsap.timeline({
+      scrollTrigger : {
+        trigger: ".cards-container",
+        start: "top top",
+        end: `+=${(cards.length - 1) * 300}`, // Adjust scroll length based on number of cards
+        pin: true,
+        scrub: 1.5,
+        markers: true,
+        pinSpacing: true,
+      },
+    }).fromTo (cards, {
+      y: "100%" , opacity: 1 , scale : 0.8
+    },
+    { 
+      y: 0, opacity: 1, scale: 1, ease: "power2.out", stagger: 0.5 
+    })
+  }, []
+  )
   return (
     <div>
       <div>
-        <p className='text-center text-6xl text-gray-50 design-taste'>TASTE BY DESIGN</p>
+        <p className='text-center text-6xl text-gray-200 font-black design-text'>TASTE BY DESIGN</p>
+        <div className='cards-container'>
         {DesignCards.map(item => (
-          <div key={item.id} style={{backgroundColor: item.color}} className='h-[450px] md:h-[670px] mt-10 justify-between flex flex-col md:w-3/4 mx-auto rounded md:px-5 cursor-pointer'>
+          <div key={item.id} style={{backgroundColor: item.color}} className='design-card h-[450px] md:h-[670px] mt-10 justify-between flex flex-col md:w-3/4 mx-auto rounded md:px-5 cursor-pointer '>
             <p className='text-gray-700 text-3xl text-center mt-5 font-extrabold'>{item.title}</p>
             <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[500px] mx-auto items-center md:rounded shadow-xl object-cover mb-10 brightness-75'/>
             <h1 className='text-end px-3 text-gray-700'>{item.description}</h1>
           </div>
         ))}
+      </div>
       </div>
     </div>
   )
