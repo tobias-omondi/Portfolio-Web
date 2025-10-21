@@ -100,11 +100,11 @@ const Work = () => {
             className="horizontal-panel w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0 title-work"
           >
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-8">
-              <p className="text-2xl md:text-4xl text-center text-gray-200 font-bold mb-4 px-4 py-2 rounded bg-blue-800">
+              <p className="text-2xl md:text-4xl text-center text-gray-200 font-black mb-4 px-4 py-2 ">
                 {portfolioItem.title}
               </p>
 
-              <div className="w-full max-w-[500px] aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+              <div className="w-full max-w-[550px] aspect-[5/4] overflow-hidden rounded-2xl shadow-xl">
                 <img
                   src={portfolioItem.image}
                   alt={portfolioItem.title}
@@ -138,7 +138,7 @@ const Work = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                   className="text-blue-500 hover:text-blue-300 text-xl transition-transform duration-300 hover:scale-110 text-end"><FaLinkSlash /></a>
+                   className="text-gray-200 hover:text-blue-300 text-xl transition-transform duration-300 hover:scale-110 text-end"> visit site</a>
                 </div>
               ))}
             </div>
