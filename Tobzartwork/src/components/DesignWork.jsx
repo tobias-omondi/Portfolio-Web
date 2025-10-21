@@ -57,10 +57,12 @@ const DesignWork = () => {
       gsap.fromTo(card, {
         y: 10,        
         opacity: 1,
-        ease: "power2.inOut", 
+        scale: 1,
+        ease: "power4.inOut", 
        skewX: -2, },{
           opacity: 1,
           skewX: 0,
+          scale: 0.6,
         scrollTrigger: {
           trigger: card,
           start: "top top",
