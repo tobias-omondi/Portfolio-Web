@@ -61,4 +61,10 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* contact component */
 
+.contact-design{
+  background-color: rgb(160, 160, 160);
+  border: 50px;
+  padding: 50%;
+}
