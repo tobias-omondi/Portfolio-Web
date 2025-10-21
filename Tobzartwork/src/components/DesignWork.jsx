@@ -15,9 +15,9 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 gsap.registerPlugin(useGSAP,ScrollTrigger,ScrollSmoother);
 
 const DesignCards = [
-  {id: 1, title: "The Design Chapter", description: "represents a new phase in your creative journey  where every project, layout, and pixel tells a part of your story. It’s not just a portfolio it’s a documentation of growth, mindset, and craft. Each section of the book/portfolio can literally be a chapter in your evolution as a designer.", color: "#9ddaf5", image: designImage},
-  {id: 2, title: "Interactive Learning Hub", description: "a digital space that blends design, storytelling, and motion to make learning experiences feel alive. It’s more than a portfolio; it’s a chapter in my creative evolution where code meets curiosity.", color: "#9ddaf5", image: designImage1},
-  {id: 3, title: "Graphic Design", description: "place where I translate ideas into visuals that speak, move, and inspire. Each chapter captures a different side of design from typography to brand identity, motion, and storytelling.", color: "#9ddaf5", image: designImage2},
+  {id: 1, title: "The Design Chapter", description: "represents a new phase in your creative journey  where every project, layout, and pixel tells a part of your story. It’s not just a portfolio it’s a documentation of growth, mindset, and craft. Each section of the book/portfolio can literally be a chapter in your evolution as a designer.", color: "#ebc334", image: designImage},
+  {id: 2, title: "Interactive Learning Hub", description: "a digital space that blends design, storytelling, and motion to make learning experiences feel alive. It’s more than a portfolio; it’s a chapter in my creative evolution where code meets curiosity.", color: "#3477eb" , image: designImage1},
+  {id: 3, title: "Graphic Design", description: "place where I translate ideas into visuals that speak, move, and inspire. Each chapter captures a different side of design from typography to brand identity, motion, and storytelling.", color: "#eb4034", image: designImage2},
 ]
 
 const DesignWork = () => {
