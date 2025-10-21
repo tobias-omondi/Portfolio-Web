@@ -31,11 +31,9 @@ const DesignWork = () => {
       {scale: 0.5,
         opacity: 0.4,
         ease: "power3.inOut",
-        skewX: 0,
       },
       {
         scale: 0.8,
-        skewX: 10,
         opacity: 1,
         duration: 0.07,
         scrollTrigger : {
@@ -61,7 +59,7 @@ const DesignWork = () => {
         ease: "power4.inOut", 
        skewX: 0, },{
           opacity: 1,
-          skewX: -4,
+          skewX: -3,
           scale: 0.6,
         scrollTrigger: {
           trigger: card,
