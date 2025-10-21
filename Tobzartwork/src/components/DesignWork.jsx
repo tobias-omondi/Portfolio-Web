@@ -57,7 +57,7 @@ const DesignWork = () => {
       gsap.fromTo(card, {
         y: 10,        
         opacity: 1,
-        scale: 1,
+        scale: 0.9,
         ease: "power4.inOut", 
        skewX: -2, },{
           opacity: 1,
