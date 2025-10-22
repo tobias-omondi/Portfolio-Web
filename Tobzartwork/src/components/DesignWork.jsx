@@ -60,7 +60,7 @@ const DesignWork = () => {
        skewX: 0, },{
           opacity: 1,
           skewX: -1,
-          scale: 0.6,
+          scale: 0.8,
         scrollTrigger: {
           trigger: card,
           start: "top top",
