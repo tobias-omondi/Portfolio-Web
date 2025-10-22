@@ -105,7 +105,7 @@ const Work = () => {
                 {portfolioItem.title}
               </p>
 
-              <div className="w-full max-w-[550px] aspect-[4/3] overflow-hidden shadow-xl">
+              <div className="w-full max-w-[500px] aspect-[4/3] overflow-hidden shadow-xl">
                 <img
                   src={portfolioItem.image}
                   alt={portfolioItem.title}
@@ -134,7 +134,7 @@ const Work = () => {
             <div className='flex flex-col md:flex-row gap-10 '>
               {projectImage.map((item) => (
                 <div key={item.id}>
-                  <img src={item.projectImage} className='w-full h-full  shadow-2xl brightness-75' />
+                  <img src={item.projectImage} className='w-full h-full  shadow-2xl brightness-90' />
                   <a key={item.id}
                     href={item.link}
                     target="_blank"
