@@ -88,9 +88,9 @@ const DesignWork = () => {
             }} 
             className='design-card sticky h-[450px] md:h-[630px] mt-10 justify-between flex flex-col md:w-2/3 mx-auto rounded md:px-5 cursor-pointer '
           >
-            <p className='text-gray-800 text-3xl text-center mt-5 font-extrabold'>{item.title}</p>
+            <h1 className='text-gray-800 text-3xl text-center mt-5 font-extrabold'>{item.title}</h1>
             <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[450px] mx-auto items-center md:rounded shadow-xl object-cover mb-10 brightness-75'/>
-            <h1 className='text-end px-3 text-gray-900'>{item.description}</h1>
+            <p className='text-end px-3 text-gray-900'>{item.description}</p>
           </div>
         ))}
       </div>

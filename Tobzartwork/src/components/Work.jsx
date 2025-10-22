@@ -101,9 +101,9 @@ const Work = () => {
             className="horizontal-panel w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0 title-work"
           >
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-8">
-              <p className="text-2xl md:text-4xl text-center text-gray-900 font-black mb-4 px-4 py-2 ">
+              <h1 className="text-2xl md:text-4xl text-center text-gray-900 font-black mb-4 px-4 py-2 ">
                 {portfolioItem.title}
-              </p>
+              </h1>
 
               <div className="w-full max-w-[500px] aspect-[4/3] overflow-hidden shadow-xl">
                 <img
@@ -115,12 +115,12 @@ const Work = () => {
             </div>
 
             <div className="w-full md:w-1/2 text-center md:text-left p-4 md:p-8 flex flex-col items-center md:items-start justify-center">
-              <p className="text-3xl md:text-5xl font-bold text-gray-900 mb-3 title-work">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-3 title-work">
                 {portfolioItem.topictitle}
-              </p>
-              <h1 className="text-gray-950 text-base md:text-lg max-w-md leading-relaxed title-work">
-                {portfolioItem.description}
               </h1>
+              <p className="text-gray-950 text-base md:text-lg max-w-md leading-relaxed title-work">
+                {portfolioItem.description}
+              </p>
             </div>
           </div>
         ))}

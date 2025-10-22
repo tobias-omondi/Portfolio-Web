@@ -1,6 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { MdClose } from "react-icons/md";
 import { gsap } from 'gsap'
 
 const navbarMenu = [
@@ -110,7 +108,7 @@ const Navbar = () => {
     <div className='w-full'>
       {/* Top-right button (always in same position) */}
       <div className="fixed z-10 "> 
-        <h1 className='text-gray-800 font-extrabold text-3xl text-start px-3'>TOBZ</h1>
+        <p className='text-gray-800 font-extrabold text-3xl text-start px-3'>TOBZ</p>
         </div>
 
       <div className="fixed top-5 right-8 z-50">

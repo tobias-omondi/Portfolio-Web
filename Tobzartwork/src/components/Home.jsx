@@ -79,14 +79,14 @@ const Home = () => {
             </div>
 
             <div className='title flex flex-col space-y-2 w-full lg:text-end '>
-            <p className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-950 font-extrabold text-start '>When Imagination Ends, We Begin</p>
-            <h1 className='title text text-gray-900 md:text-start px-5 w-full space-y-2'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
-               When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</h1>
+            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-950 font-extrabold text-start '>When Imagination Ends, We Begin</h1>
+            <p className='title text-xl text-gray-900 md:text-start px-5 w-full space-y-2'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
+               When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
             </div>
           </div>
 
 
-          <p className='title-name text-6xl lg:text-9xl font-black text-center text-gray-500 py-10'>WE CREATE FEELINGS</p>
+          <h1 className='title-name text-6xl lg:text-9xl font-black text-center text-gray-500 py-10'>WE CREATE FEELINGS</h1>
       </div>
 
 
