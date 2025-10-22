@@ -55,11 +55,11 @@ const DesignWork = () => {
       gsap.fromTo(card, {
         y: 10,        
         opacity: 1,
-        scale: 0.9,
+        scale: 1,
         ease: "power4.inOut", 
        skewX: 0, },{
           opacity: 1,
-          skewX: -3,
+          skewX: -1,
           scale: 0.6,
         scrollTrigger: {
           trigger: card,
@@ -75,7 +75,7 @@ const DesignWork = () => {
   return (
     <div ref={main}>
       <div>
-        <p className='text-center text-6xl text-gray-200 font-black design-text mt-10'>TASTE BY DESIGN</p>
+        <p className='text-center text-6xl text-gray-900 font-black design-text mt-10'>TASTE BY DESIGN</p>
         
         <div className='cards-container relative min-h-[250vh] pt-[10vh]'>
         
@@ -88,9 +88,9 @@ const DesignWork = () => {
             }} 
             className='design-card sticky h-[450px] md:h-[630px] mt-10 justify-between flex flex-col md:w-2/3 mx-auto rounded md:px-5 cursor-pointer '
           >
-            <p className='text-gray-700 text-3xl text-center mt-5 font-extrabold'>{item.title}</p>
+            <p className='text-gray-800 text-3xl text-center mt-5 font-extrabold'>{item.title}</p>
             <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[450px] mx-auto items-center md:rounded shadow-xl object-cover mb-10 brightness-75'/>
-            <h1 className='text-end px-3 text-gray-700'>{item.description}</h1>
+            <h1 className='text-end px-3 text-gray-900'>{item.description}</h1>
           </div>
         ))}
       </div>

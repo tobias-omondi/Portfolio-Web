@@ -1,17 +1,34 @@
 import React from 'react'
-import BrainScene from './BrainScene'
+// import BrainScene from './BrainScene'
 
 const Contact = () => {
   return (
     <div className='mt-20'>
-      <h1 className='text-center text-6xl text-gray-50'>CONTACT</h1>
+      <div className='form-content'>
+        <form onSubmit={(e) => e.preventDefault()}>
+          <div className='form-row'>
+            <label htmlFor='fullname'>Full Name:</label>
+            <input id='fullname' type='text' name='fullname' placeholder='Your name' />
+          </div>
 
-      <div className='flex flex-row justify-evenly items-center'>
-          <BrainScene />
-          {/* <div>
-            <h1 className='contact-design'>contact</h1>
-          </div> */}
+          <div className='form-row'>
+            <label htmlFor='emailaddress'>Email Address:</label>
+            <input id='emailaddress' type='email' name='emailaddress' placeholder='you@email.com' />
+          </div>
+
+          <div className='form-row'>
+            <label htmlFor='message'>Message:</label>
+            <textarea id='message' name='message' rows={5} placeholder='Write your message...' />
+          </div>
+
+          <div className='form-actions'>
+            <button type='submit'>Send Message</button>
+          </div>
+        </form>
       </div>
+      {/* <div className='brain-scene-container'>
+      <BrainScene />
+      </div> */}
     </div>
   )
 }
