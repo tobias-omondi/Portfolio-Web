@@ -71,8 +71,8 @@ const About = () => {
     <div className='text-name mt-20 py-20' ref={aboutRef}>
       <div>
         <p className='text-gray-900 about-me text-2xl w-full lg:w-3/4 md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-light'>
-          <span className='text-3xl lg:text-6xl'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a 
-          <span className='font-bold text-blue-400'> Front-End Developer and UI/UX Designer</span> 
+          <span className='text-3xl lg:text-6xl space-x-1.5'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a 
+          <span className='font-bold text-blue-500'> Front-End Developer and UI/UX Designer </span> 
           who loves creating amazing things that go beyond imagination.based in <br/>
           <span className='country bg-white/20 px-5 py-2 skew-y-6 shadow-2xl rounded-xl text-black backdrop-blur-3xl'>Nairobi,<span className='text-red-500'>K</span>e <span className='text-green-600'>n </span> y <span className='text-white bg-black rounded-3xl'>a</span></span>
         </p>
