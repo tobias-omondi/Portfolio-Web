@@ -110,17 +110,19 @@ const Home = () => {
       </div>
 
 
-        {/* myproject */}
-
-      <div>
-        <Project />
-      </div>
-
+    
 
 
       <div>
         <DesignWork />
       </div>
+
+          {/* myproject */}
+
+      <div>
+        <Project />
+      </div>
+
 
       {/* Contact section */}
       <div>
