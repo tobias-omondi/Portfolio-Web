@@ -79,7 +79,7 @@ const Home = () => {
                 <BrainScene />
             </div>
 
-            <div className='title flex flex-col space-y-2 w-full lg:text-end '>
+            <div className='title flex flex-col space-y-3 w-full lg:text-end '>
             <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-700 font-extrabold text-start '>When Imagination Ends, We Begin</h1>
             <p className='title text-xl text-gray-900 md:text-start px-5 w-full space-y-2'>I don’t wait for ideas to show up. I chase them down and build them from scratch. Tobz Studio is where I turn thoughts into visuals, motion, and experiences that hit different.
 

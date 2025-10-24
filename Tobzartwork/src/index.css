@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 body{
-  font-family: 'Melodrama', serif;
   background-color: beige;
   margin: 0;
   padding: 0;
