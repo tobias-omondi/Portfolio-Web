@@ -13,6 +13,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all'
 import { SplitText } from 'gsap/SplitText';
 import DesignWork from './DesignWork'
+import Project from './Project'
 
 
 const Home = () => {
@@ -80,8 +81,13 @@ const Home = () => {
 
             <div className='title flex flex-col space-y-2 w-full lg:text-end '>
             <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-700 font-extrabold text-start '>When Imagination Ends, We Begin</h1>
-            <p className='title text-xl text-gray-900 md:text-start px-5 w-full space-y-2'>At Tobz Studio, imagination isn’t the finish line — it’s the starting point.
-               When the creative spark fades for others, we ignite ours. We push ideas beyond the dream phase, turning imagination into visuals, motion, and experiences that feel alive.</p>
+            <p className='title text-xl text-gray-900 md:text-start px-5 w-full space-y-2'>I don’t wait for ideas to show up. I chase them down and build them from scratch. Tobz Studio is where I turn thoughts into visuals, motion, and experiences that hit different.
+
+            I create work that feels alive, not just polished designs but stories that move and stick.
+
+            While others dream, I make those dreams real pixel by pixel, frame by frame.
+
+            This is me. I don’t just imagine. I make imagination real.</p>
             </div>
           </div>
 
@@ -95,6 +101,12 @@ const Home = () => {
        {/* About section */}
       <div >
         <About />
+      </div>
+
+      {/* myproject */}
+
+      <div>
+        <Project />
       </div>
 
       {/* Work section */}
