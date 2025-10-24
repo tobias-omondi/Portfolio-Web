@@ -73,7 +73,7 @@ const Work = () => {
 
   return (
     <div ref={containerRef} className="overflow-x-hidden">
-      <div className='bg-transparent' aria-hidden="true" />
+      <div className='bg-blue-300' aria-hidden="true" />
 
       <div
         ref={horizontalSectionRef}
