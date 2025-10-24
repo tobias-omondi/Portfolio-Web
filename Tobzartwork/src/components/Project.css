@@ -36,6 +36,10 @@
   margin-top: 2rem;
   line-height: 2.18;
 }
+.project-about{
+  margin-top: 17rem;
+  text-align: end;
+}
 
 @media screen and (max-width: 900px) {
   .project-container{
@@ -46,6 +50,10 @@
     width: 300px;
     object-fit: cover;
   }
+  .project-about{
+  margin-top: 6rem;
+  text-align: center;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -60,5 +68,9 @@
   .project-title {
   flex: 1;
   padding-left: 0px;
+}
+.project-about{
+  margin-top: 10rem;
+  text-align: center;
 }
 }

@@ -14,6 +14,11 @@ const Project = () => {
         <div className='project-links'>
           <a href='https://schoolapplication-one.vercel.app/' className='project-link-item'>School Application</a>
           <a href='https://lapa-weld.vercel.app/' className='project-link-item'>Lapa</a>
+
+          {/* about what i do */}
+          <div className='project-about'>
+          <p>Artwork Design, Graphic Design, Front-end, Backend Development, Animations & ThreeD</p>
+          </div>
         </div>
       </div>
     </div>
