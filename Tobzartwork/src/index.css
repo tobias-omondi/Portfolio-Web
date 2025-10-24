@@ -8,12 +8,12 @@ body{
   color: black;
 }
 
-h1, h2, h3, h4, h5, h6 .brand-name {
+h1, h2, h3, h4, h6 .brand-name {
   /* font-family: 'Melodrama', serif; */
   font-family: 'Boska', serif;
 }
 
-p, li, a, span, button, input, textarea .body-text-view{
+p, li, a, span, button, input, textarea, h5 .body-text-view{
   font-family: 'Clash Grotesk', sans-serif;
 }
 
