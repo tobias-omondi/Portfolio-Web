@@ -35,22 +35,21 @@ const Work = () => {
   useGSAP(() => {
     const panels = panelsRef.current;
     const horizontalContainer = horizontalSectionRef.current;
-    
-    // Set a variable for the container width
-    const scrollWidth = horizontalContainer.scrollWidth;
+
+    const totalWidth = panels.reduce((acc, panel) => acc + panel.offsetWidth, 0);
+    const endValue = totalWidth - window.innerWidth;
 
     // Horizontal scroll animation
     gsap.to(panels, {
-      xPercent: -100 * (panels.length - 1),
-      ease: "power1.inOut",
+      x: -endValue,
+      ease: "none", // Use "none" for better mobile performance and predictability
       scrollTrigger: {
         trigger: horizontalContainer,
         pin: true,
         scrub: 1,
         // The end value needs to be calculated based on the content's total width
-        end: () => "+=" + (scrollWidth - window.innerWidth),
-        invalidateOnRefresh: true,
-        // markers: true,
+        end: () => `+=${endValue}`,
+        invalidateOnRefresh: true, // Recalculate positions on window resize
       },
     });
 
@@ -77,14 +76,12 @@ const Work = () => {
 
       <div
         ref={horizontalSectionRef}
-        // Remove the hard-coded width and let the children define it
         className="relative flex flex-row flex-nowrap items-center overflow-hidden h-screen"
       >
         {workPortfolio.map((portfolioItem, index) => (
           <div
             key={portfolioItem.id}
             ref={(el) => (panelsRef.current[index] = el)}
-            // Use flex-shrink-0 to prevent panels from shrinking
             className="horizontal-panel w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0 title-work"
           >
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-8">
