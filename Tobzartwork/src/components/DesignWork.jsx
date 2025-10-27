@@ -86,7 +86,7 @@ const DesignWork = () => {
               backgroundColor: item.color,
               top: `calc(10vh + ${index * 10}px)` // Stacks cards 10px apart
             }} 
-            className='design-card sticky h-[450px] md:h-[550px]  justify-between flex flex-col md:w-2/4 mx-auto rounded md:px-5 cursor-pointer '
+            className='design-card sticky h-[450px] md:h-[590px]  justify-between flex flex-col md:w-3/4 mx-auto rounded md:px-5 cursor-pointer space-y-6 '
           >
             <h1 className='text-gray-800 text-3xl text-center mt-5 font-extrabold'>{item.title}</h1>
             <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[400px] mx-auto items-center md:rounded object-cover mb-2 brightness-75'/>
