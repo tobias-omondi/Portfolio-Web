@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
     </div>
   
-      <div className='flex space-x-6 text-center px-2 md:text-end justify-end items-center md:px-10 mt-5'>
+      <div className='flex flex-col md:flex-row space-x-3 md:space-x-6 text-center px-2 md:text-end justify-end items-center md:px-10 mt-5'>
         <a href='linkedin.com/in/tobias-ogola-5b4b2521b' className='text-gray-800'>LINKEDIN</a>
         <a href='linkedin.com/in/tobias-ogola-5b4b2521b' className='text-gray-800'>X</a>
         <a href='linkedin.com/in/tobias-ogola-5b4b2521b' className='text-gray-800'>INSTAGRAM</a>
