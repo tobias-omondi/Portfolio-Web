@@ -32,7 +32,7 @@ const Footer = () => {
         <a href='linkedin.com/in/tobias-ogola-5b4b2521b' className='text-gray-800'>DEV.TO</a>
     </div>
     <div className='mt-10'>
-      <h5 className='text-gray-300 text-7xl md:text-[14rem] text-center font-black mb-0 pb-0'>TOBZ WORK</h5>
+      <h5 className='text-gray-300 text-7xl md:text-[12rem] text-center font-black mb-0 pb-0'>TOBZ WORK</h5>
     </div>
     </div>
   )

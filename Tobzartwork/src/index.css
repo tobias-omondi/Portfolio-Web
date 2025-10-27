@@ -3,6 +3,7 @@
 #root, .App {
   margin: 0;
   padding: 0;
+  /* cursor: none; */
 }
 
 body{
@@ -11,6 +12,9 @@ body{
   padding: 0;
   box-sizing: border-box;
   color: black;
+  /* cursor: none; */
+  font-family: var(--font-primary);
+  position: relative;
 }
 
 h1, h2, h3, h4, h6 .brand-name {
@@ -175,4 +179,15 @@ form {
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+
+/* cursor animation */
+
+:root{
+  --background: #0e1116;
+  --white: #ffffff;
+  --accent: #1bf8c7;
+  --gray: #818a91;
+  --green: #1bf8c7;
+  --font-primary: "Helvetica Neue", sans-serif;
 }

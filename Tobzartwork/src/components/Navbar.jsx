@@ -31,7 +31,7 @@ const Navbar = () => {
       if (overlayRef.current) {
         gsap.fromTo(
           overlayRef.current,
-          { opacity: 0, y: 100 },
+          { opacity: 0, y: -100 },
           { opacity: 1,
             y: 0,
             duration: 1.3,
@@ -108,7 +108,7 @@ const Navbar = () => {
     <div className='w-full'>
       {/* Top-right button (always in same position) */}
       <div className="fixed z-10 "> 
-        <p className='text-gray-800 font-extrabold text-3xl text-start px-3'>TOBZ</p>
+        <p className='text-gray-600 font-extrabold text-3xl text-start px-3'>TOBZ</p>
         </div>
 
       <div className="fixed top-5 right-8 z-50">

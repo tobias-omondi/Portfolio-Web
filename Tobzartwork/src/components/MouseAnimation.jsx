@@ -2,7 +2,7 @@ import React from 'react'
 
 const MouseAnimation = () => {
   return (
-    <div>
+    <div className='root'>
       <h1>Mouse animation</h1>
     </div>
   )
