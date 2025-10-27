@@ -7,14 +7,10 @@
 }
 
 body{
-  background-color: beige;
+  background-color: rgb(248, 248, 213);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
-  /* cursor: none; */
-  font-family: var(--font-primary);
-  position: relative;
 }
 
 h1, h2, h3, h4, h6 .brand-name {
@@ -33,6 +29,7 @@ p, li, a, span, button, input, textarea, h5 .body-text-view{
   background-image: url("https://images.pexels.com/photos/32069893/pexels-photo-32069893.jpeg");
   background-size: cover;
   backdrop-filter: blur(30px);
+  background-position: center;
 }
 .custom-gradient2 {
   color: rgb(90, 90, 170);
@@ -182,13 +179,4 @@ form {
   object-fit: cover;
 }
 
-/* cursor animation */
 
-:root{
-  --background: #0e1116;
-  --white: #ffffff;
-  --accent: #1bf8c7;
-  --gray: #818a91;
-  --green: #1bf8c7;
-  --font-primary: "Helvetica Neue", sans-serif;
-}
