@@ -118,7 +118,7 @@ const Navbar = () => {
         {!toggleMenu ? (
           <button
             ref = {buttonref}
-            className='open-menu-button text-black font-black text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent'
+            className='open-menu-button text-black font-black text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent '
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"
           >
@@ -127,7 +127,7 @@ const Navbar = () => {
         ) : (
           <button
             ref={closebuttonref}
-            className="text-white text-xl cursor-pointer font-extrabold border-none bg-transparent"
+            className=" close-menu-button text-white text-xl cursor-pointer font-extrabold border-none bg-transparent"
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >

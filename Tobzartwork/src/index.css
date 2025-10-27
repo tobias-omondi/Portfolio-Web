@@ -179,4 +179,15 @@ form {
   object-fit: cover;
 }
 
+.open-menu-button:focus-visible,
+.open-menu-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.close-menu-button:focus-visible,
+.close-menu-button:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 
