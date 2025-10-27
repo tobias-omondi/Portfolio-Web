@@ -90,7 +90,7 @@ const DesignWork = () => {
           >
             <h1 className='text-gray-800 text-3xl text-center mt-5 font-extrabold'>{item.title}</h1>
             <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[400px] mx-auto items-center md:rounded object-cover mb-2 brightness-75'/>
-            <p className='text-end px-3 text-gray-900'>{item.description}</p>
+            <p className='text-end px-3 text-gray-900 text-xl'>{item.description}</p>
           </div>
         ))}
       </div>

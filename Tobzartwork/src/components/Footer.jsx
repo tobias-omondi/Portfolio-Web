@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
     </div>
   
-      <div className='flex flex-col md:flex-row space-x-3 md:space-x-6 text-center  md:text-end md:justify-end items-center md:px-10 mt-5'>
+      <div className='flex wrap flex-wrap md:flex-row space-x-3 md:space-x-6 md:text-end md:justify-end items-center px-10 mt-5'>
         <a href='linkedin.com/in/tobias-ogola-5b4b2521b' className='text-gray-800'>LINKEDIN</a>
         <a href='linkedin.com/in/tobias-ogola-5b4b2521b' className='text-gray-800'>X</a>
         <a href='linkedin.com/in/tobias-ogola-5b4b2521b' className='text-gray-800'>INSTAGRAM</a>

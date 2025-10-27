@@ -73,21 +73,15 @@ const Home = () => {
   return (
     <div >
       <Navbar />
-      <div className='mt-5'>
-          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-7'>
+      <div className='mt-10'>
+          <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-10'>
             <div  className="w-full lg:w-4/5 hero ">
                 <BrainScene />
             </div>
 
             <div className='title flex flex-col space-y-3 w-full lg:text-end '>
-            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-700 font-extrabold text-start '>When Imagination Ends, We Begin</h1>
-            <p className='title text-xl text-gray-900 md:text-start px-5 w-full'>I don’t wait for ideas to show up. I chase them down and build them from scratch. Tobz Studio is where I turn thoughts into visuals, motion, and experiences that hit different.
-
-            I create work that feels alive, not just polished designs but stories that move and stick.
-
-            While others dream, I make those dreams real pixel by pixel, frame by frame.
-
-            This is me. I don’t just imagine. I make imagination real.</p>
+            <h1 className='title text-3xl md:text-5xl lg:text-6xl px-5 text-gray-800 font-extrabold text-center md:text-start '>When Imagination Ends, We Begin</h1>
+            <p className='title text-2xl text-gray-600 md:text-start px-5 w-full text-center'>I don’t wait for ideas, I hunt them down and build them. Tobz Studio turns thoughts into visuals, motion, and experiences that hit different. I make designs that breathe, not just look good. I don’t imagine. I make imagination real.</p>
             </div>
           </div>
 

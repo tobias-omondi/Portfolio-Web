@@ -39,10 +39,10 @@ const Work = () => {
             </div>
 
             <div className="w-full md:w-1/2 text-center md:text-left p-4 md:p-8 flex flex-col items-center md:items-start justify-center">
-              <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-3">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-3">
                 {portfolioItem.topictitle}
               </h1>
-              <p className="text-gray-950 text-base md:text-lg max-w-md leading-relaxed">
+              <p className="text-gray-600 text-2xl max-w-md leading-relaxed">
                 {portfolioItem.description}
               </p>
             </div>
