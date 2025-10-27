@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 import designImage from '/src/assets/_.avif';
-import designImage1 from '/src/assets/ball-63527_1280.avif';
+
 
 const workPortfolio = [
   {
@@ -14,10 +14,9 @@ const workPortfolio = [
 ];
 
 const Work = () => {
-  const containerRef = useRef(null);
   
   return (
-    <div ref={containerRef} className="overflow-x-hidden">
+    <div  className="overflow-x-hidden">
       <div className='bg-blue-300' aria-hidden="true" />
 
       {/* This container will be used for your new animation logic */}
@@ -30,7 +29,7 @@ const Work = () => {
             className="w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0"
           >
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-8">
-              <div className="w-full max-w-[500px] aspect-[4/3] overflow-hidden shadow-xl">
+              <div className="w-full max-w-[500px]  overflow-hidden shadow-xl">
                 <img
                   src={portfolioItem.image}
                   alt={portfolioItem.title}

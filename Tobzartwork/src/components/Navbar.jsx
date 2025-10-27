@@ -1,6 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { gsap } from 'gsap'
 
+import { TbMenu } from "react-icons/tb";
+import { MdClose } from "react-icons/md";
+
 const navbarMenu = [
   {name: 'HOME', link: '/'},
    {name: 'ABOUT', link: '/About'},
@@ -43,10 +46,10 @@ const Navbar = () => {
     } else if (showOverlay && overlayRef.current) {
       gsap.to(overlayRef.current, {
         opacity: 0,
-        y: 500,
+        y: -500,
         duration: 1.6,
         delay:0.5,
-        ease: "power4.inOut",
+        ease: "power1.inOut",
         onComplete: () => setShowOverlay(false)
       });
     }
@@ -115,11 +118,11 @@ const Navbar = () => {
         {!toggleMenu ? (
           <button
             ref = {buttonref}
-            className='open-menu-button text-blue-500 font-extrabold text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent'
+            className='open-menu-button text-black font-black text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent'
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"
           >
-            Menu
+            <TbMenu size={30} />
           </button>
         ) : (
           <button
@@ -128,7 +131,7 @@ const Navbar = () => {
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >
-            Clo<span className='text-blue-600'>se</span>
+            <MdClose size={30} />
           </button>
         )}
       </div>

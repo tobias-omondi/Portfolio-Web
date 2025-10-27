@@ -26,14 +26,13 @@ h1, h2, h3, h4, h6 .brand-name {
 p, li, a, span, button, input, textarea, h5 .body-text-view{
   /* font-family: 'Clash Grotesk', sans-serif; */
   font-family: 'Alpino', sans-serif;
+
 }
 
 .custom-gradient{
- background: #16222A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  background-image: url("https://images.pexels.com/photos/32069893/pexels-photo-32069893.jpeg");
+  background-size: cover;
+  backdrop-filter: blur(30px);
 }
 .custom-gradient2 {
   color: rgb(90, 90, 170);
