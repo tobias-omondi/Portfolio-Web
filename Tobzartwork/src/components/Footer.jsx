@@ -17,7 +17,7 @@ const Footer = () => {
   return (  
     <div className='space-y-5 mt-10 height-full'>
       <hr className="border-t border-gray-600 w-full" />
-    <div className='p-10 flex flex-col md:flex-row justify-between items-center space-y-4'>
+    <div className='p-10 flex flex-col-reverse md:flex-row justify-between items-center space-y-4'>
         <a href='mailto:' className='text-gray-500'>tobiasogola42@gmail.com</a>
         <div>
           <span className='text-gray-600'> {time.toLocaleTimeString()}</span>
