@@ -1,7 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
+import designImage from "/src/assets/_.avif";
 
-import designImage from '/src/assets/_.avif';
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { SplitText } from "gsap/SplitText";
 
+// ✅ Register only actual GSAP plugins
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 const workPortfolio = [
   {
@@ -14,35 +21,74 @@ const workPortfolio = [
 ];
 
 const Work = () => {
-  
-  return (
-    <div  className="overflow-x-hidden">
-      <div className='bg-blue-300' aria-hidden="true" />
+  // ✅ The main container ref
+  const workMainRef = useRef();
 
-      {/* This container will be used for your new animation logic */}
+  // ✅ GSAP hook
+  useGSAP(() => {
+    let ctx = gsap.context(() => {
+      const sections = gsap.utils.toArray(".work-section");
+
+      // ✅ Animate each section separately
+      sections.forEach((section) => {
+        gsap.fromTo(
+          section,
+          { y: 200, opacity: 0,  rotation: -60, },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            rotation: 0,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 90%",
+              end: "center center",
+              scrub: 1.3,
+              once: true,
+              toggleActions: "play none none none",
+              // markers: true,
+            },
+          }
+        );
+      });
+    }, workMainRef);
+
+    // ✅ Cleanup on unmount
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <div className="overflow-x-hidden py-16">
+      <div className="bg-blue-300" aria-hidden="true" />
+
+      {/* ✅ Scope GSAP inside this ref */}
       <div
+        ref={workMainRef}
         className="relative flex flex-row flex-nowrap items-center h-screen"
       >
         {workPortfolio.map((portfolioItem) => (
           <div
             key={portfolioItem.id}
-            className="w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0"
+            className="work-section w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0"
           >
+            {/* Image side */}
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-8">
-              <div className="w-full max-w-[500px]  overflow-hidden shadow-xl">
+              <div className="w-full max-w-[1000px] overflow-hidden shadow-xl">
                 <img
                   src={portfolioItem.image}
                   alt={portfolioItem.title}
-                  className="w-full h-full object-contain md:object-cover brightness-90 "
+                  className="w-full h-full object-contain md:object-cover"
                 />
               </div>
             </div>
 
+            {/* Text side */}
             <div className="w-full md:w-1/2 text-center md:text-left p-4 md:p-8 flex flex-col items-center md:items-start justify-center">
-              <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-3">
+              <h1 className="text-3xl md:text-5xl font-bold text-black mb-3">
                 {portfolioItem.topictitle}
               </h1>
-              <p className="text-gray-600 text-2xl max-w-md leading-relaxed">
+              <p className="text-gray-600 text-xl max-w-md leading-relaxed">
                 {portfolioItem.description}
               </p>
             </div>
