@@ -78,13 +78,13 @@ const Project = () => {
         <div className="project-links">
           <a
             href="https://schoolapplication-one.vercel.app/"
-            className="project-link-item"
+            className="project-link-item  text-blue-500"
           >
             School Application
           </a>
           <a
             href="https://lapa-weld.vercel.app/"
-            className="project-link-item"
+            className="project-link-item  text-blue-500"
           >
             Lapa
           </a>
