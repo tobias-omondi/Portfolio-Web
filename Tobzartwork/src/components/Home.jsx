@@ -86,7 +86,7 @@ const Home = () => {
           </div>
 
 
-          <h1 className='title-name text-6xl lg:text-9xl font-black text-center text-black py-10'>WE CREATE FEELINGS</h1>
+          <h1 className='title-name text-6xl lg:text-9xl font-black text-center text-blue-400 py-10'>WE CREATE FEELINGS</h1>
       </div>
 
 

@@ -33,7 +33,7 @@ const Work = () => {
       sections.forEach((section) => {
         gsap.fromTo(
           section,
-          { y: 200, opacity: 0,  rotation: -60, },
+          { y: 200, opacity: 0,  rotation: -20, },
           {
             y: 0,
             opacity: 1,

@@ -25,11 +25,12 @@ const About = () => {
       gsap.to(splitText.lines, {
         scale: 1,
         opacity: 1,
+        duration: 1.9,
         stagger: {
            grid: [7,15],
            from: 'start',
            axis: "x",
-           ease: "power3.in",
+           ease: "power1.in",
            amount: 1.9
         },
         scrollTrigger: {
@@ -72,7 +73,7 @@ const About = () => {
       <div>
         <p className='text-gray-700 about-me text-2xl w-full lg:w-3/4 md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
           <span className='text-3xl lg:text-6xl space-x-1.5'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a 
-          <span className='font-bold text-black'> Front-End Developer and UI/UX Designer </span> 
+          <span className='font-bold text-blue-400'> Front-End Developer and UI/UX Designer </span> 
           who loves creating amazing things that go beyond imagination.based in <br/>
           <span className='country bg-white/20 px-5 py-2 skew-y-6 shadow-2xl rounded-xl text-black backdrop-blur-3xl'>Nairobi,<span className='text-red-500'> K</span>e <span className='text-green-600'>n </span> y <span className='text-white bg-black rounded-3xl'>a</span></span>
         </p>
