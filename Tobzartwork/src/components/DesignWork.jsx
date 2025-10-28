@@ -47,18 +47,18 @@ const DesignWork = () => {
   }, { scope: main } 
   )
 
+useGSAP(() => {
   gsap.to(".cards-wrapper-container", {
-  backgroundColor: "#000000",
-  ease: "power1.inOut",
-  // duration: 1.2,
-  scrollTrigger: {
-    trigger: ".cards-wrapper-container",
-    start: "top top",
-    end: "bottom bottom",
-    scrub: 1.3,
-    toggleActions: "play none none reverse",
-  },
-});
+    backgroundColor: "#000000",
+    ease: "power1.inOut",
+    scrollTrigger: {
+      trigger: ".cards-wrapper-container",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1.3,
+    },
+  });
+}, { scope: main });
 
 
   useGSAP(() => {
@@ -89,9 +89,9 @@ const DesignWork = () => {
   return (
     <div ref={main}>
       <div>
-        <h1 className='text-center text-6xl text-gray-900 font-black design-text mt-5'>TASTE BY DESIGN</h1>
+        <h1 className='text-center text-6xl text-gray-900 font-black'>TASTE BY DESIGN</h1>
         
-        <div className='cards-container relative min-h-[250vh] pt-[10vh] cards-wrapper-container'>
+        <div className='cards-container relative min-h-[250vh] pt-[10vh] cards-wrapper-container rounded-b-3xl'>
         
         {DesignCards.map((item, index) => (
           <div 

@@ -25,7 +25,7 @@ const Contact = () => {
 
           <div className='form-row'>
             <label htmlFor='message'>Message:</label>
-            <textarea id='message' name='message' rows={5} placeholder='How can help you...' />
+            <textarea id='message' name='message' rows={5} placeholder='How can I help you...' />
           </div>
 
           <div className='form-actions'>

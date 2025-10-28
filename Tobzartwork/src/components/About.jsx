@@ -68,7 +68,7 @@ const About = () => {
   }, []); // Empty dependency array for one-time run
 
   return (
-    <div className='text-name mt-20' ref={aboutRef}>
+    <div className='text-name mt-20 py-10' ref={aboutRef}>
       <div>
         <p className='text-gray-700 about-me text-2xl w-full lg:w-3/4 md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
           <span className='text-3xl lg:text-6xl space-x-1.5'> 👋 </span> Pleased to meet you, and thank you for visiting my website. I’m a 

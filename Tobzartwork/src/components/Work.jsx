@@ -73,7 +73,7 @@ const Work = () => {
             className="work-section w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0"
           >
             {/* Image side */}
-            <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-8">
+            <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-0">
               <div className="w-full max-w-[1000px] overflow-hidden shadow-xl">
                 <img
                   src={portfolioItem.image}
@@ -84,8 +84,8 @@ const Work = () => {
             </div>
 
             {/* Text side */}
-            <div className="w-full md:w-1/2 text-center md:text-left p-4 md:p-8 flex flex-col items-center md:items-start justify-center">
-              <h1 className="text-3xl md:text-5xl font-bold text-black mb-3">
+            <div className="w-full md:w-1/2 text-center md:text-left p-4 md:p-2 flex flex-col items-center md:items-start justify-center">
+              <h1 className="text-3xl md:text-5xl font-bold text-black">
                 {portfolioItem.topictitle}
               </h1>
               <p className="text-gray-600 text-xl max-w-md leading-relaxed">
