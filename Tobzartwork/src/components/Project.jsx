@@ -78,18 +78,18 @@ const Project = () => {
         <div className="project-links">
           <a
             href="https://schoolapplication-one.vercel.app/"
-            className="project-link-item  text-blue-500"
+            className="project-link-item  text-gray-500"
           >
             School Application
           </a>
           <a
             href="https://lapa-weld.vercel.app/"
-            className="project-link-item  text-blue-500"
+            className="project-link-item  text-gray-500"
           >
             Lapa
           </a>
 
-          <div className="project-about">
+          <div className="project-about text-gray-950">
             <p>
               Artwork Design, Graphic Design, Front-end, Backend Development,
               Animations & ThreeD
