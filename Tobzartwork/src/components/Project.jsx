@@ -54,7 +54,7 @@ const Project = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 1.3,
+          duration: 1.0,
           stagger: 0.19,
           ease: "power1.in",
           scrollTrigger: {
@@ -70,12 +70,12 @@ const Project = () => {
   return (
     <div className="project-container">
       <div className="project-section project-portfolio">
-        <img src={myImage} alt="myprofile" className="project-profile" />
+        <img src={myImage} alt="myprofile" className="project-profile shadow-xl" />
       </div>
 
       <div className="project-title">
         <h2>Projects Worked</h2>
-        <div className="project-links">
+        <div className="project-links ">
           <a
             href="https://schoolapplication-one.vercel.app/"
             className="project-link-item  text-gray-500"

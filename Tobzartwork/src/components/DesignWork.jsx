@@ -22,7 +22,7 @@ const DesignCards = [
 
 const DesignWork = () => {
 
-  // 1. Create a ref for the main component wrapper
+  // Create a ref for the main component wrapper
   const main = useRef();
 
   // Your existing animation for the text
@@ -70,11 +70,11 @@ useGSAP(() => {
         y: 10,        
         opacity: 1,
         scale: 0.95,
-        ease: "power4.inOut", 
+        ease: "power1.inOut", 
        skewX: 0, },{
           opacity: 1,
-          skewX: -1,
-          scale: 0.8,
+          skewX: -3,
+          scale: 0.6,
         scrollTrigger: {
           trigger: card,
           start: "top top",
@@ -83,7 +83,7 @@ useGSAP(() => {
         },
       });
     });
-  }, { scope: main }); // 2. Scope this animation as well
+  }, { scope: main });
 
 
   return (
@@ -98,12 +98,12 @@ useGSAP(() => {
             key={item.id} 
             style={{
               backgroundColor: item.color,
-              top: `calc(10vh + ${index * 10}px)` // Stacks cards 10px apart
+              top: `calc(10vh + ${index * 10}px)`
             }} 
             className='design-card sticky h-[450px] md:h-[590px]  justify-between flex flex-col md:w-3/4 mx-auto rounded md:px-5 cursor-pointer space-y-6 '
           >
             <h1 className='text-gray-800 text-3xl text-center mt-5 font-extrabold'>{item.title}</h1>
-            <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[400px] mx-auto items-center md:rounded object-cover mb-2 brightness-75'/>
+            <img src={item.image} alt='project'  className=' h-[200px] w-full md:h-[400px] mx-auto items-center md:rounded object-cover mb-2 brightness-75 shadow shadow-blue-400'/>
             <p className='text-end px-3 text-gray-900 text'>{item.description}</p>
           </div>
         ))}
