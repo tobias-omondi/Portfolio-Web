@@ -103,20 +103,15 @@ const Home = () => {
         <Work />
       </div>
 
-
-    
-
-
-      <div>
-        <DesignWork />
-      </div>
-
-          {/* myproject */}
+            {/* myproject */}
 
       <div>
         <Project />
       </div>
 
+      <div>
+        <DesignWork />
+      </div>
 
       {/* Contact section */}
       <div>
