@@ -74,6 +74,7 @@ const Home = () => {
     <div >
       <Navbar />
       <div className='mt-10'>
+        <section id='home'>
           <div className='flex flex-col lg:flex-row-reverse justify-center items-center space-y-6 mt-10'>
             <div  className="w-full lg:w-4/5 hero ">
                 <BrainScene />
@@ -84,8 +85,7 @@ const Home = () => {
             <p className='text-2xl text-gray-700 md:text-start px-5 w-full text-center'>I don’t wait for ideas, I hunt them down and build them. Tobz Studio turns thoughts into visuals, motion, and experiences that hit different. I make designs that breathe, not just look good. I don’t imagine. I make imagination real.</p>
             </div>
           </div>
-
-
+          </section>
           <h1 className='title-name text-6xl lg:text-9xl font-black text-center text-blue-400 py-10'>WE CREATE FEELINGS</h1>
       </div>
 

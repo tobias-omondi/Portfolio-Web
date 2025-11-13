@@ -68,6 +68,7 @@ const Project = () => {
   });
 
   return (
+    <section id = "project">
     <div className="project-container">
       <div className="project-section project-portfolio">
         <img src={myImage} alt="myprofile" className="project-profile shadow-xl" />
@@ -98,6 +99,7 @@ const Project = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

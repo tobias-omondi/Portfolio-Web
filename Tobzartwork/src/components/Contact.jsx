@@ -75,6 +75,7 @@ const Contact = () => {
   }
 
   return (
+    <section id='contact'>
     <div className="mt-20">
       <div className="form-content">
         <form onSubmit={handleSubmit}>
@@ -138,6 +139,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    </section>
   )
 }
 

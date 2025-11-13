@@ -1,33 +1,32 @@
-import React, { useEffect, useState, useRef } from 'react'
-import { gsap } from 'gsap'
-
+import React, { useEffect, useState, useRef } from "react";
+import { gsap } from "gsap";
 import { TbMenu } from "react-icons/tb";
 import { MdClose } from "react-icons/md";
 
 const navbarMenu = [
-  {name: 'HOME', link: '/'},
-   {name: 'ABOUT', link: '/About'},
-  {name: 'WORK', link: '/Work'},
-  {name: 'CONTACT', link: '/Contact'}
-]
+  { name: "[HOME]", link: "home" },
+  { name: "[ABOUT]", link: "about" },
+  { name: "[PROJECT]", link: "project" },
+  { name: "[CONTACT]", link: "contact" },
+];
 
 const socialLinks = [
-  {name: 'LINKEDIN', link: 'https://www.linkedin.com/in/tobias-ogola-8b1945273/'},
-  {name: 'X', link: '#'},
-  {name: 'INSTAGRAM', link: '#'},
-  {name: 'DEV.TO', link: 'https://dev.to/tobiasog'},
-  {name: 'BEHANCE', link: '#'}
-]
+  { name: "LINKEDIN", link: "https://www.linkedin.com/in/tobias-ogola-8b1945273/" },
+  { name: "X", link: "#" },
+  { name: "INSTAGRAM", link: "#" },
+  { name: "DEV.TO", link: "https://dev.to/tobiasog" },
+  { name: "BEHANCE", link: "#" },
+];
 
 const Navbar = () => {
   const [toggleMenu, setMenuOpen] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const overlayRef = useRef(null);
-  const logoRef = useRef(null);
   const socialLinksRef = useRef(null);
   const buttonref = useRef(null);
   const closebuttonref = useRef(null);
 
+  // Overlay animation
   useEffect(() => {
     if (toggleMenu) {
       setShowOverlay(true);
@@ -35,12 +34,7 @@ const Navbar = () => {
         gsap.fromTo(
           overlayRef.current,
           { opacity: 0, y: -100 },
-          { opacity: 1,
-            y: 0,
-            duration: 1.3,
-            delay:0.3,
-            ease: "power4.inOut" 
-          }
+          { opacity: 1, y: 0, duration: 1.3, delay: 0.3, ease: "power4.inOut" }
         );
       }
     } else if (showOverlay && overlayRef.current) {
@@ -48,130 +42,129 @@ const Navbar = () => {
         opacity: 0,
         y: -500,
         duration: 1.6,
-        delay:0.5,
+        delay: 0.5,
         ease: "power1.inOut",
-        onComplete: () => setShowOverlay(false)
+        onComplete: () => setShowOverlay(false),
       });
     }
   }, [toggleMenu, showOverlay]);
 
-
-  // brand log t/o animatiom
-    useEffect(() => {
-    if (showOverlay && logoRef.current) {
+  // Social links animation
+  useEffect(() => {
+    if (showOverlay && socialLinksRef.current) {
+      const links = socialLinksRef.current.querySelectorAll("a");
       gsap.fromTo(
-        logoRef.current,
-        {y: -200, scale: 1.2, opacity:0 },
-        {y: 0, scale: 0.5, opacity:1, duration: 2.05, ease: "power4.inOut" }
+        links,
+        { y: -200, opacity: 0 },
+        { y: 0, opacity: 1, duration: 3.05, ease: "elastic.out(4,0.3)", stagger: 0.09 }
       );
     }
   }, [showOverlay]);
 
-  // social links animation
+  // Open button animation
   useEffect(() => {
-  if (showOverlay && socialLinksRef.current) {
-    const links = socialLinksRef.current.querySelectorAll('a');
-    gsap.fromTo(
-      links,
-      { y: -200, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 3.05,
-        ease: "elastic.out(4,0.3)",
-        stagger: 0.09,
-      }
-    );
-  }
-}, [showOverlay]);
-
-//open button animation
-  useEffect(() => {
-    if (showOverlay && buttonref.current) {
+    if (buttonref.current) {
       gsap.fromTo(
         buttonref.current,
-        {scale: 1.6, opacity: 0.7},
-        {scale: 1, opacity: 1, duration:0.7, delay:0.3, ease:"power2.inOut"}
-      )
+        { scale: 1.4, opacity: 0.5 },
+        { scale: 1, opacity: 1, duration: 0.7, delay: 0.3, ease: "power2.inOut" }
+      );
     }
-  }, [toggleMenu])
+  }, [toggleMenu]);
 
-  // close button animation
+  // Close button animation
   useEffect(() => {
-    if (showOverlay && closebuttonref.current) {
-      gsap.to(
+    if (closebuttonref.current) {
+      gsap.fromTo(
         closebuttonref.current,
-        {scale: 1.3, opacity: 0.7},
-        {scale: 1, opacity: 1, duration:0.7, delay:0.3, ease:"power3.inOut"}
-      )
+        { scale: 1.3, opacity: 0.7 },
+        { scale: 1, opacity: 1, duration: 0.7, delay: 0.3, ease: "power3.inOut" }
+      );
     }
-  }, [toggleMenu])
+  }, [toggleMenu]);
+
+  // 🔥 Smooth scroll handler
+  const handleScroll = (targetId) => {
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      setMenuOpen(false); // close menu after click (mobile)
+    }
+  };
 
   return (
-    <div className='w-full'>
-      {/* Top-right button (always in same position) */}
-      <div className="fixed z-10 "> 
-        <p className='text-gray-600 font-extrabold text-3xl text-start px-3'>TOBZ</p>
-        </div>
+    <div className="w-full fixed top-0 left-0 z-50">
+      {/* Navbar container */}
+      <div className="flex justify-between items-center px-6 py-4 bg-white/70 backdrop-blur-md">
+        {/* Logo */}
+        <p className="text-gray-700 font-extrabold text-3xl">TOBZ</p>
 
-      <div className="fixed top-5 right-8 z-50">
-        {!toggleMenu ? (
-          <button
-            ref = {buttonref}
-            className='open-menu-button text-black font-black text-xl hover:rounded-2xl cursor-pointer border-none bg-transparent '
-            onClick={() => setMenuOpen(true)}
-            aria-label="Open menu"
-          >
-            <TbMenu size={30} />
-          </button>
-        ) : (
-          <button
-            ref={closebuttonref}
-            className=" close-menu-button text-white text-xl cursor-pointer font-extrabold border-none bg-transparent"
-            onClick={() => setMenuOpen(false)}
-            aria-label="Close menu"
-          >
-            <MdClose size={30} />
-          </button>
-        )}
+        {/* Desktop menu */}
+        <ul className="hidden md:flex gap-30 text-gray-800 font-medium text-lg ">
+          {navbarMenu.map((item) => (
+            <li key={item.name}>
+              <button
+                onClick={() => handleScroll(item.link)}
+                className="hover:text-blue-500 transition-all duration-300 delay-150 cursor-pointer"
+              >
+                {item.name}
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile toggle button */}
+        <div className="md:hidden">
+          {!toggleMenu ? (
+            <button
+              ref={buttonref}
+              onClick={() => setMenuOpen(true)}
+              aria-label="Open menu"
+              className="text-black text-2xl"
+            >
+              <TbMenu size={30} />
+            </button>
+          ) : (
+            <button
+              ref={closebuttonref}
+              onClick={() => setMenuOpen(false)}
+              aria-label="Close menu"
+              className="text-white text-2xl"
+            >
+              <MdClose size={30} />
+            </button>
+          )}
+        </div>
       </div>
 
-      {/* Overlay Menu (only when showOverlay is true) */}
+      {/* Mobile overlay */}
       {showOverlay && (
         <div
           ref={overlayRef}
-          className='fixed inset-0 custom-gradient p-5 rounded shadow flex flex-row justify-evenly items-start z-40 w-full h-full'
+          className="fixed inset-0 custom-gradient flex flex-col justify-center items-center z-40 w-full h-full"
         >
-          {/* Left: Logo */}
-          <div className='flex flex-col items-start flex-1'>
-            <h1
-             ref = {logoRef}
-             className='text-7xl lg:text-9xl font-extrabold mb-10 text-white brand-name'>
-              T<span className='custom-gradient2 font-medium'>/</span>O
-            </h1>
-          </div>
-          {/* Right: Menu and Social Links */}
-          <div className='flex flex-col items-center flex-2'>
-            <ul>
-              {navbarMenu.map((item) => (
-                <li key={item.name} className='text-white text-center font-medium text-4xl lg:text-6xl lg:py-4 px-4 rounded mt-16 lg:mt-10 brand-name'>
-                  <a href={item.link} onClick={() => setMenuOpen(false)}>{item.name}</a>
-                </li>
-              ))}
-            </ul>
-            <div
-             ref={socialLinksRef}
-             className='social-links absolute bottom-6 left-4 sm:bottom-10 sm:left-10 flex flex-row flex-wrap text-lg sm:text-xl gap-4 sm:gap-8 font-light text-gray-200'>
-              {socialLinks.map(link => (
-                
-                <a key={link.name} href={link.link}>{link.name} </a>
-              ))}
-            </div>
+          <ul className="flex flex-col items-center gap-10">
+            {navbarMenu.map((item) => (
+              <li key={item.name} className="text-white text-4xl font-medium">
+                <button onClick={() => handleScroll(item.link)}>{item.name}</button>
+              </li>
+            ))}
+          </ul>
+
+          <div
+            ref={socialLinksRef}
+            className="absolute bottom-6 flex gap-6 text-gray-300 text-lg"
+          >
+            {socialLinks.map((link) => (
+              <a key={link.name} href={link.link} target="_blank" rel="noopener noreferrer">
+                {link.name}
+              </a>
+            ))}
           </div>
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

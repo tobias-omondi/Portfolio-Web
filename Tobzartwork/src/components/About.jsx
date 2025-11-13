@@ -69,6 +69,8 @@ const About = () => {
   }, []); // Empty dependency array for one-time run
 
   return (
+
+    <section id="about">
     <div className='text-name mt-20 py-10' ref={aboutRef}>
       <div>
         <p className='text-gray-700 about-me text-2xl w-full lg:w-3/4 md:text-4xl text-center mx-auto text-medium space-y-1.5 lg:space-y-4 font-medium'>
@@ -79,6 +81,7 @@ const About = () => {
         </p>
       </div>
     </div>
+    </section>
   );
 };
 

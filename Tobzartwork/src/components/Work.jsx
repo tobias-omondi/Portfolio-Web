@@ -70,7 +70,7 @@ const Work = () => {
         {workPortfolio.map((portfolioItem) => (
           <div
             key={portfolioItem.id}
-            className="work-section w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0"
+            className="work-section w-screen h-full flex flex-col md:flex-row items-center justify-center p-6 md:p-12 flex-shrink-0 gap-9"
           >
             {/* Image side */}
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4 md:p-0">

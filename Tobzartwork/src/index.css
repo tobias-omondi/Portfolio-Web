@@ -32,7 +32,7 @@ a {
 }
 
 .custom-gradient{
-  background-image: url("https://images.pexels.com/photos/32069893/pexels-photo-32069893.jpeg");
+  background-image: url("https://cdn.pixabay.com/photo/2018/12/10/23/25/dinosaur-3868106_1280.jpg");
   background-size: cover;
   backdrop-filter: blur(30px);
   background-position: center;
